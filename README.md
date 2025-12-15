@@ -8,7 +8,7 @@
  - [x] 《钢结构设计标准》GB 50017-2017
  - [ ] 《混凝土结构设计规范》GB 50010-2010
  - [ ] 《建筑结构荷载规范》GB 50009-2012
- - [ ] 《建筑抗震设计规范》GB 50011-2010
+ - [x] 《建筑抗震设计规范》GB 50011-2010
  - [ ] 《工程结构通用规范》GB 55001-2021
 
 ## PaddleOCR-VL 使用 ([官方文档](https://www.paddleocr.ai/main/version3.x/pipeline_usage/PaddleOCR-VL.html))
@@ -39,7 +39,7 @@
  1. 任务完成后，识别结果会保存在`output`文件夹中
  1. 通过`scp`命令或者`VScode`下载`output`文件夹到本地电脑。在本地电脑输入类似下面的`scp`命令（假设Autodl服务器SSH端口是`43668`，从Autodl实例可以复制具体的登录指令查看端口）：
     ```bash
-    scp -rP 43668 root@connect.westc.gpuhub.com:<实例中的文件/文件夹> <本地文件/文件夹>
+    scp -rP 43668 root@connect.westc.gpuhub.com:"/root/output/*" <本地文件/文件夹>
     ```
 
 
@@ -103,6 +103,8 @@
   4. `1panel`网站启用`https`，SSL选择刚才申请的证书
   5. 上传`site`文件夹到服务器网站根目录，可以使用SCP命令上传
      ```bash
+     # 先清空远程目录，再上传新文件
+     ssh -i "C:/Users/youti/.ssh/id_ed25519_1panel" root@youtian95.cn "rm -rf /opt/1panel/www/sites/standards.youtian95.cn/index/*"
      scp -r -i "C:/Users/youti/.ssh/id_ed25519_1panel" ./site/* root@youtian95.cn:/opt/1panel/www/sites/standards.youtian95.cn/index/
      ```
      其中`-i`参数指定SSH密钥文件路径，id_ed25519_1panel密钥文件的本地路径在`1panel`中找到

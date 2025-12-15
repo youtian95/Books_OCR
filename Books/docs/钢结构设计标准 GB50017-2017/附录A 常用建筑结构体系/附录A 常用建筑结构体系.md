@@ -38,7 +38,7 @@ A.2.2 结构布置应符合下列原则：
 
 ### A.3 大跨度钢结构
 
-###### A.3.1 大跨度钢结构体系可按表 A.3.1 分类。
+##A.3.1 大跨度钢结构体系可按表 A.3.1 分类。
 
 <div style="text-align: center;">表 A.3.1 大跨度钢结构体系分类</div>
 
@@ -46,7 +46,7 @@ A.2.2 结构布置应符合下列原则：
 
 <table border=1 style='margin: auto; width: max-content;'><tr><td style='text-align: center;'>体系分类</td><td style='text-align: center;'>常见形式</td></tr><tr><td style='text-align: center;'>以整体受弯为主的结构</td><td style='text-align: center;'>平面桁架、立体桁架、空腹桁架、网架、组合网架钢结构以及与钢索组合形成的各种预应力钢结构</td></tr><tr><td style='text-align: center;'>以整体受压为主的结构</td><td style='text-align: center;'>实腹钢拱、平面或立体桁架形式的拱形结构、网壳、组合网壳钢结构以及与钢索组合形成的各种预应力钢结构</td></tr><tr><td style='text-align: center;'>以整体受拉为主的结构</td><td style='text-align: center;'>悬索结构、索桁架结构、索穹顶等</td></tr></table>
 
-#### A.3.2 大跨度钢结构的设计原则应符合下列规定：
+A.3.2 大跨度钢结构的设计原则应符合下列规定：
 
 1 大跨度钢结构的设计应结合工程的平面形状、体型、跨度、支承情况、荷载大小、建筑功能综合分析确定，结构布置和支承形式应保证结构具有合理的传力途径和整体稳定性。平面结构应设置平面外的支撑体系。
 

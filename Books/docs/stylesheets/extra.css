@@ -1,0 +1,14 @@
+/* 全局段落首行缩进 2 字符 */
+/* .md-typeset p {
+    text-indent: 2em;
+} */
+
+/* 带有 no-indent 类的段落不缩进 */
+/* .md-typeset p.no-indent {
+    text-indent: 0;
+} */
+
+/* 图片所在的段落通常不需要缩进，防止图片偏离中心 */
+/* .md-typeset p:has(img) {
+    text-indent: 0;
+} */
