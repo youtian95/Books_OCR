@@ -1,0 +1,263 @@
+
+
+## 目次
+
+1 总则..... 1  
+2 术语和符号..... 2  
+2.1 术语..... 2  
+2.2 符号..... 5  
+3 基本设计规定..... 10  
+3.1 一般规定..... 10  
+3.2 结构体系..... 12  
+3.3 作用..... 12  
+3.4 结构或构件变形及舒适度的规定..... 14  
+3.5 截面板件宽厚比等级..... 14  
+4 材料..... 16  
+4.1 钢材牌号及标准..... 16  
+4.2 连接材料型号及标准..... 16  
+4.3 材料选用..... 17  
+4.4 设计指标和设计参数..... 19  
+5 结构分析与稳定性设计..... 24  
+5.1 一般规定..... 24  
+5.2 初始缺陷..... 25  
+5.3 一阶弹性分析与设计..... 27  
+5.4 二阶弹性  $ P-\Delta $  分析与设计..... 28  
+5.5 直接分析设计法..... 28  
+6 受弯构件..... 31  
+6.1 受弯构件的强度..... 31  
+6.2 受弯构件的整体稳定..... 33  
+6.3 局部稳定..... 35  
+6.4 焊接截面梁腹板考虑屈曲后强度的计算..... 42  
+6.5 腹板开孔要求..... 45
+
+6.6 梁的构造要求.....46  
+  
+7 轴心受力构件.....48  
+  
+7.1 截面强度计算.....48  
+  
+7.2 轴心受压构件的稳定性计算.....49  
+  
+7.3 实腹式轴心受压构件的局部稳定和屈曲后强度.....59  
+  
+7.4 轴心受力构件的计算长度和容许长细比.....62  
+  
+7.5 轴心受压构件的支撑.....66  
+  
+7.6 单边连接的单角钢.....68  
+  
+8 拉弯、压弯构件.....71  
+  
+8.1 截面强度计算.....71  
+  
+8.2 构件的稳定性计算.....72  
+  
+8.3 框架柱的计算长度.....77  
+  
+8.4 压弯构件的局部稳定和屈曲后强度.....82  
+  
+8.5 承受次弯矩的桁架杆件.....84  
+  
+9 加劲钢板剪力墙.....86  
+  
+9.1 一般规定.....86  
+  
+9.2 加劲钢板剪力墙的计算.....86  
+  
+9.3 构造要求.....88  
+  
+10 塑性及弯矩调幅设计.....90  
+  
+10.1 一般规定.....90  
+  
+10.2 弯矩调幅设计要点.....90  
+  
+10.3 构件的计算.....91  
+  
+10.4 容许长细比和构造要求.....92  
+  
+11 连接.....94  
+  
+11.1 一般规定.....94  
+  
+11.2 焊接连接计算.....95  
+  
+11.3 焊接连接构造要求.....99  
+  
+11.4 紧固件连接计算.....102  
+  
+11.5 紧固件连接构造要求.....106  
+  
+11.6 销轴连接.....107
+
+11.7 钢管法兰连接构造.....110  
+12 节点.....111  
+12.1 一般规定.....111  
+12.2 连接板节点.....111  
+12.3 梁柱连接节点.....114  
+12.4 铸钢节点.....118  
+12.5 预应力索节点.....119  
+12.6 支座.....119  
+12.7 柱脚.....121  
+13 钢管连接节点.....125  
+13.1 一般规定.....125  
+13.2 构造要求.....125  
+13.3 圆钢管直接焊接节点和局部加劲节点的计算.....129  
+13.4 矩形钢管直接焊接节点和局部加劲节点的计算.....144  
+14 钢与混凝土组合梁.....153  
+14.1 一般规定.....153  
+14.2 组合梁设计.....155  
+14.3 抗剪连接件的计算.....158  
+14.4 挠度计算.....160  
+14.5 负弯矩区裂缝宽度计算.....161  
+14.6 纵向抗剪计算.....162  
+14.7 构造要求.....163  
+15 钢管混凝土柱及节点.....165  
+15.1 一般规定.....165  
+15.2 矩形钢管混凝土柱.....165  
+15.3 圆形钢管混凝土柱.....165  
+15.4 钢管混凝土柱与钢梁连接节点.....166  
+16 疲劳计算及防脆断设计.....167  
+16.1 一般规定.....167  
+16.2 疲劳计算.....167
+
+16.3 构造要求..... 172  
+16.4 防脆断设计..... 175  
+17 钢结构抗震性能化设计..... 176  
+17.1 一般规定..... 176  
+17.2 计算要点..... 178  
+17.3 基本抗震措施..... 188  
+18 钢结构防护..... 195  
+18.1 抗火设计..... 195  
+18.2 防腐蚀设计..... 195  
+18.3 隔热..... 196  
+附录 A 常用建筑结构体系..... 198  
+附录 B 结构或构件的变形容许值..... 200  
+附录 C 梁的整体稳定系数..... 204  
+附录 D 轴心受压构件的稳定系数..... 209  
+附录 E 柱的计算长度系数..... 214  
+附录 F 加劲钢板剪力墙的弹性屈曲临界应力..... 223  
+附录 G 桁架节点板在斜腹杆压力作用下的稳定计算..... 231  
+附录 H 无加劲钢管直接焊接节点刚度判别..... 233  
+附录 J 钢与混凝土组合梁的疲劳验算..... 235  
+附录 K 疲劳计算的构件和连接分类..... 236  
+本标准用词说明..... 242  
+引用标准名录..... 243  
+附：条文说明..... 24340
+
+## CONTENTS
+
+1 General Provisions ..... 1  
+2 Terms and Symbols ..... 2  
+2.1 Terms ..... 2  
+2.2 Symbols ..... 5  
+3 General Requirements ..... 10  
+3.1 General Requirements ..... 10  
+3.2 Structural Systems ..... 12  
+3.3 Actions ..... 12  
+3.4 Requirements of Deformation for Structures and Members ..... 14  
+3.5 Classification of Sections ..... 14  
+4 Material ..... 16  
+4.1 Structural Steel Designations and Standards ..... 16  
+4.2 Connections and Fasteners Materials and Standards ..... 16  
+4.3 Selection of Materials ..... 17  
+4.4 Design Strength and Parameters ..... 19  
+5 Structural Analysis and Stability Design ..... 24  
+5.1 General Requirements ..... 24  
+5.2 Initial Imperfections ..... 25  
+5.3 First-order Elastic Analysis and Design ..... 27  
+5.4 Second-order Elastic Analysis and Design ..... 28  
+5.5 Direct Analysis Method of Design ..... 28  
+6 Flexural Members ..... 31  
+6.1 Shear and Flexural Strength ..... 31  
+6.2 Flexural-torsional Stability of Beams ..... 33  
+6.3 Plate Stability ..... 35  
+6.4 Design of Beams Considering Post-buckling Strength of Webs ..... 42
+
+6.5 Strengthening of Openings.....44  
+6.6 Detailings.....46  
+7 AxiallyLoaded Members.....47  
+7.1 Strength Calculation of Cross-sections.....47  
+7.2 Stability Calculation of Members under Axial Compression.....48  
+7.3 Local Stability and Post-buckling Strength of Solid Web Members under Axial Compression.....58  
+7.4 Effective Length and Allowable Slenderness Ratio of Members under Axial Compression.....60  
+7.5 Bracing of Members under Axial Compression.....64  
+7.6 Special Cases of Trusses and Tower Members.....66  
+8 Members under Combined Axial Force and Bending.....69  
+8.1 Strength Calculation of Cross-sections.....69  
+8.2 Stability Calculation of Members.....70  
+8.3 Effective Length of Frame Columns.....75  
+8.4 Local Stability and Post-buckling Strength of Beam-columns.....80  
+8.5 Truss Members Subjected to Second-order Moments.....82  
+9 Stiffened Steel Shear Walls.....83  
+9.1 General Requirements.....83  
+9.2 Design of Stiffened Steel Shear Walls.....83  
+9.3 Detailings.....85  
+10 Plastic Design and Provisions for Design using Moment Redistribution.....86  
+10.1 General Requirements.....86  
+10.2 Provisions for Design using Moment Redistribution.....86  
+10.3 Calculation of Member Strength and Stability.....87  
+10.4 Slenderness Limitations and Detailings.....88  
+11 Connections.....90  
+11.1 General Requirements.....90  
+11.2 Calculation of Welded Connections.....91  
+11.3 Detailing Requirements of Welded Connections.....95
+
+11.4 Calculation of Fasteners ..... 98  
+11.5 Detailing Requirements of Fasteners ..... 102  
+11.6 Pin Connections ..... 103  
+11.7 Details of Flanged Connections for Steel Tubes ..... 106  
+12 Joints ..... 107  
+12.1 General Requirements ..... 107  
+12.2 Connecting Plate Joints ..... 107  
+12.3 Beam-Column Joints ..... 110  
+12.4 Cast Steel Joints ..... 114  
+12.5 Pre-stressed Cable Joints ..... 115  
+12.6 Bearings ..... 115  
+12.7 Column Footing ..... 117  
+13 Steel Tubular Joints ..... 121  
+13.1 General Requirements ..... 121  
+13.2 Detail Requirements ..... 121  
+13.3 Design of Unstiffened and Stiffened CHS Joints ..... 125  
+13.4 Design of Unstiffened and Stiffened RHS Joints ..... 139  
+14 Composite Steel and Concrete beams ..... 148  
+14.1 General Requirements ..... 148  
+14.2 Design of Composite Beams ..... 150  
+14.3 Calculation of Shear Connections ..... 153  
+14.4 Calculation of Deflection ..... 155  
+14.5 Calculation of Concrete Crack Width at Hogging Moment Region ..... 156  
+14.6 Calculation of Longitudinal Shear ..... 157  
+14.7 Detailing Provisions ..... 158  
+15 Concrete-filled Steel Tubular Column and Joints ..... 160  
+15.1 General Requirements ..... 160  
+15.2 Rectangular Concrete-filled Steel Tubular Members ..... 160  
+15.3 Circular Concrete-filled Steel Tubular Members ..... 160  
+15.4 Beam-column Joints ..... 161
+
+6 Design for Fatigue and Brittle fracture ..... 162  
+16.1 General Requirements ..... 162  
+16.2 Design for Fatigue ..... 162  
+16.3 Detailing Requirements ..... 167  
+16.4 Prevention of Brittle Fracture ..... 170  
+17 Seismic Design of Steel Structural Members ..... 171  
+17.1 General Requirements ..... 171  
+17.2 Design Requirements ..... 173  
+17.3 Connections and Details ..... 183  
+18 Protection of Steel Structures ..... 190  
+18.1 Fire-Resistant Design ..... 190  
+18.2 Corrosion Prevention Design ..... 190  
+18.3 Temperature Insulation ..... 191  
+Appendix A Common Structural Systems ..... 193  
+Appendix B Limits of Deflection for Structures and Flexural Members ..... 195  
+Appendix C Overall Stability of Beams ..... 199  
+Appendix D Stability Coefficients of Members under Axial Compression ..... 204  
+Appendix E Effective Length Factors of Columns ..... 209  
+Appendix F Elastic Buckling Stresses for Stiffened Steel Shear Walls ..... 218  
+Appendix G Buckling Calculation of Truss Connecting Plate under Diagonal Compression ..... 226  
+Appendix H Classifications of Unstiffened Tubular Joints in terms of Rigidity ..... 228  
+Appendix J Fatigue Design of Composite Steel and Concrete Beams ..... 230  
+Appendix K Design Values for Compressive and Shear Strength of Composite Circular ..... 231  
+Concrete-filled Steel Tubes ..... 231  
+Explanation of wording in this standard ..... 237  
+List of Quoted Standards ..... 238  
+Addition: Explanation of Provisions ..... 24340

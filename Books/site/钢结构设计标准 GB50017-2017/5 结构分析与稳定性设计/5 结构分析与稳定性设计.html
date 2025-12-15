@@ -1,0 +1,1750 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../4%20%E6%9D%90%E6%96%99/4%20%E6%9D%90%E6%96%99.html">
+      
+      
+        <link rel="next" href="../6%20%E5%8F%97%E5%BC%AF%E6%9E%84%E4%BB%B6/6%20%E5%8F%97%E5%BC%AF%E6%9E%84%E4%BB%B6.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>5 结构分析与稳定性设计 - 土木在线标准</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#5" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="土木在线标准" class="md-header__button md-logo" aria-label="土木在线标准" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            土木在线标准
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              5 结构分析与稳定性设计
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../index.html" class="md-tabs__link">
+          
+  
+  
+  首页
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../%E5%B0%81%E9%9D%A2/%E5%B0%81%E9%9D%A2.html" class="md-tabs__link">
+          
+  
+  
+  钢结构设计标准
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="土木在线标准" class="md-nav__button md-logo" aria-label="土木在线标准" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    土木在线标准
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    首页
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Welcome to MkDocs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    钢结构设计标准
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    钢结构设计标准
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%B0%81%E9%9D%A2/%E5%B0%81%E9%9D%A2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    封面
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%89%8D%E8%A8%80/%E5%89%8D%E8%A8%80.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    前言
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%9B%AE%E5%BD%95/%E7%9B%AE%E5%BD%95.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    目录
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1%20%E6%80%BB%E5%88%99/1%20%E6%80%BB%E5%88%99.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1 总则
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2%20%E6%9C%AF%E8%AF%AD%E5%92%8C%E7%AC%A6%E5%8F%B7/2%20%E6%9C%AF%E8%AF%AD%E5%92%8C%E7%AC%A6%E5%8F%B7.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2 术语和符号
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3%20%E5%9F%BA%E6%9C%AC%E8%AE%BE%E8%AE%A1%E8%A7%84%E5%AE%9A/3%20%E5%9F%BA%E6%9C%AC%E8%AE%BE%E8%AE%A1%E8%A7%84%E5%AE%9A.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3 基本设计规定
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4%20%E6%9D%90%E6%96%99/4%20%E6%9D%90%E6%96%99.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4 材料
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5 结构分析与稳定性设计
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="5%20%E7%BB%93%E6%9E%84%E5%88%86%E6%9E%90%E4%B8%8E%E7%A8%B3%E5%AE%9A%E6%80%A7%E8%AE%BE%E8%AE%A1.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5 结构分析与稳定性设计
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5 结构分析与稳定性设计
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5 结构分析与稳定性设计">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 一般规定
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 初始缺陷
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 一阶弹性分析与设计
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-p-delta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 二阶弹性 $ P-\Delta $ 分析与设计
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#55" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5 直接分析设计法
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6%20%E5%8F%97%E5%BC%AF%E6%9E%84%E4%BB%B6/6%20%E5%8F%97%E5%BC%AF%E6%9E%84%E4%BB%B6.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6 受弯构件
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7%20%E8%BD%B4%E5%BF%83%E5%8F%97%E5%8A%9B%E6%9E%84%E4%BB%B6/7%20%E8%BD%B4%E5%BF%83%E5%8F%97%E5%8A%9B%E6%9E%84%E4%BB%B6.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7 轴心受力构件
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../8%20%E6%8B%89%E5%BC%AF%E3%80%81%E5%8E%8B%E5%BC%AF%E6%9E%84%E4%BB%B6/8%20%E6%8B%89%E5%BC%AF%E3%80%81%E5%8E%8B%E5%BC%AF%E6%9E%84%E4%BB%B6.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8 拉弯、压弯构件
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../9%20%E5%8A%A0%E5%8A%B2%E9%92%A2%E6%9D%BF%E5%89%AA%E5%8A%9B%E5%A2%99/9%20%E5%8A%A0%E5%8A%B2%E9%92%A2%E6%9D%BF%E5%89%AA%E5%8A%9B%E5%A2%99.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9 加劲钢板剪力墙
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10%20%E5%A1%91%E6%80%A7%E5%8F%8A%E5%BC%AF%E7%9F%A9%E8%B0%83%E5%B9%85%E8%AE%BE%E8%AE%A1/10%20%E5%A1%91%E6%80%A7%E5%8F%8A%E5%BC%AF%E7%9F%A9%E8%B0%83%E5%B9%85%E8%AE%BE%E8%AE%A1.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 塑性及弯矩调幅设计
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11%20%E8%BF%9E%E6%8E%A5/11%20%E8%BF%9E%E6%8E%A5.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11 连接
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12%20%E8%8A%82%E7%82%B9/12%20%E8%8A%82%E7%82%B9.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12 节点
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13%20%E9%92%A2%E7%AE%A1%E8%BF%9E%E6%8E%A5%E8%8A%82%E7%82%B9/13%20%E9%92%A2%E7%AE%A1%E8%BF%9E%E6%8E%A5%E8%8A%82%E7%82%B9.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    13 钢管连接节点
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14%20%E9%92%A2%E4%B8%8E%E6%B7%B7%E5%87%9D%E5%9C%9F%E7%BB%84%E5%90%88%E6%A2%81/14%20%E9%92%A2%E4%B8%8E%E6%B7%B7%E5%87%9D%E5%9C%9F%E7%BB%84%E5%90%88%E6%A2%81.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    14 钢与混凝土组合梁
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15%20%E9%92%A2%E7%AE%A1%E6%B7%B7%E5%87%9D%E5%9C%9F%E6%9F%B1%E5%8F%8A%E8%8A%82%E7%82%B9/15%20%E9%92%A2%E7%AE%A1%E6%B7%B7%E5%87%9D%E5%9C%9F%E6%9F%B1%E5%8F%8A%E8%8A%82%E7%82%B9.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    15 钢管混凝土柱及节点
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../16%20%E7%96%B2%E5%8A%B3%E8%AE%A1%E7%AE%97%E5%8F%8A%E9%98%B2%E8%84%86%E6%96%AD%E8%AE%BE%E8%AE%A1/16%20%E7%96%B2%E5%8A%B3%E8%AE%A1%E7%AE%97%E5%8F%8A%E9%98%B2%E8%84%86%E6%96%AD%E8%AE%BE%E8%AE%A1.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    16 疲劳计算及防脆断设计
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../17%20%E9%92%A2%E7%BB%93%E6%9E%84%E6%8A%97%E9%9C%87%E6%80%A7%E8%83%BD%E5%8C%96%E8%AE%BE%E8%AE%A1/17%20%E9%92%A2%E7%BB%93%E6%9E%84%E6%8A%97%E9%9C%87%E6%80%A7%E8%83%BD%E5%8C%96%E8%AE%BE%E8%AE%A1.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    17 钢结构抗震性能化设计
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../18%20%E9%92%A2%E7%BB%93%E6%9E%84%E9%98%B2%E6%8A%A4/18%20%E9%92%A2%E7%BB%93%E6%9E%84%E9%98%B2%E6%8A%A4.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    18 钢结构防护
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%99%84%E5%BD%95A%20%E5%B8%B8%E7%94%A8%E5%BB%BA%E7%AD%91%E7%BB%93%E6%9E%84%E4%BD%93%E7%B3%BB/%E9%99%84%E5%BD%95A%20%E5%B8%B8%E7%94%A8%E5%BB%BA%E7%AD%91%E7%BB%93%E6%9E%84%E4%BD%93%E7%B3%BB.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附录A 常用建筑结构体系
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%99%84%E5%BD%95B%20%E7%BB%93%E6%9E%84%E6%88%96%E6%9E%84%E4%BB%B6%E7%9A%84%E5%8F%98%E5%BD%A2%E5%AE%B9%E8%AE%B8%E5%80%BC/%E9%99%84%E5%BD%95B%20%E7%BB%93%E6%9E%84%E6%88%96%E6%9E%84%E4%BB%B6%E7%9A%84%E5%8F%98%E5%BD%A2%E5%AE%B9%E8%AE%B8%E5%80%BC.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附录B 结构或构件的变形容许值
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%99%84%E5%BD%95C%20%E6%A2%81%E7%9A%84%E6%95%B4%E4%BD%93%E7%A8%B3%E5%AE%9A%E7%B3%BB%E6%95%B0/%E9%99%84%E5%BD%95C%20%E6%A2%81%E7%9A%84%E6%95%B4%E4%BD%93%E7%A8%B3%E5%AE%9A%E7%B3%BB%E6%95%B0.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附录C 梁的整体稳定系数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%99%84%E5%BD%95D%20%E8%BD%B4%E5%BF%83%E5%8F%97%E5%8E%8B%E6%9E%84%E4%BB%B6%E7%9A%84%E7%A8%B3%E5%AE%9A%E7%B3%BB%E6%95%B0/%E9%99%84%E5%BD%95D%20%E8%BD%B4%E5%BF%83%E5%8F%97%E5%8E%8B%E6%9E%84%E4%BB%B6%E7%9A%84%E7%A8%B3%E5%AE%9A%E7%B3%BB%E6%95%B0.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附录D 轴心受压构件的稳定系数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%99%84%E5%BD%95%20E%20%E6%9F%B1%E7%9A%84%E8%AE%A1%E7%AE%97%E9%95%BF%E5%BA%A6%E7%B3%BB%E6%95%B0/%E9%99%84%E5%BD%95%20E%20%E6%9F%B1%E7%9A%84%E8%AE%A1%E7%AE%97%E9%95%BF%E5%BA%A6%E7%B3%BB%E6%95%B0.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附录 E 柱的计算长度系数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%99%84%E5%BD%95F%20%E5%8A%A0%E5%8A%B2%E9%92%A2%E6%9D%BF%E5%89%AA%E5%8A%9B%E5%A2%99%E7%9A%84%E5%BC%B9%E6%80%A7%E5%B1%88%E6%9B%B2%E4%B8%B4%E7%95%8C%E5%BA%94%E5%8A%9B/%E9%99%84%E5%BD%95F%20%E5%8A%A0%E5%8A%B2%E9%92%A2%E6%9D%BF%E5%89%AA%E5%8A%9B%E5%A2%99%E7%9A%84%E5%BC%B9%E6%80%A7%E5%B1%88%E6%9B%B2%E4%B8%B4%E7%95%8C%E5%BA%94%E5%8A%9B.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附录 F 加劲钢板剪力墙的弹性屈曲临界应力
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%99%84%E5%BD%95G%20%E6%A1%81%E6%9E%B6%E8%8A%82%E7%82%B9%E6%9D%BF%E5%9C%A8%E6%96%9C%E8%85%B9%E6%9D%86%E5%8E%8B%E5%8A%9B%E4%BD%9C%E7%94%A8%E4%B8%8B%E7%9A%84%E7%A8%B3%E5%AE%9A%E8%AE%A1%E7%AE%97/%E9%99%84%E5%BD%95G%20%E6%A1%81%E6%9E%B6%E8%8A%82%E7%82%B9%E6%9D%BF%E5%9C%A8%E6%96%9C%E8%85%B9%E6%9D%86%E5%8E%8B%E5%8A%9B%E4%BD%9C%E7%94%A8%E4%B8%8B%E7%9A%84%E7%A8%B3%E5%AE%9A%E8%AE%A1%E7%AE%97.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附录G 桁架节点板在斜腹杆压力作用下的稳定计算
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%99%84%E5%BD%95H%20%E6%97%A0%E5%8A%A0%E5%8A%B2%E9%92%A2%E7%AE%A1%E7%9B%B4%E6%8E%A5%E7%84%8A%E6%8E%A5%E8%8A%82%E7%82%B9%E5%88%9A%E5%BA%A6%E5%88%A4%E5%88%AB/%E9%99%84%E5%BD%95H%20%E6%97%A0%E5%8A%A0%E5%8A%B2%E9%92%A2%E7%AE%A1%E7%9B%B4%E6%8E%A5%E7%84%8A%E6%8E%A5%E8%8A%82%E7%82%B9%E5%88%9A%E5%BA%A6%E5%88%A4%E5%88%AB.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附录H 无加劲钢管直接焊接节点刚度判别
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%99%84%E5%BD%95J%20%E9%92%A2%E4%B8%8E%E6%B7%B7%E5%87%9D%E5%9C%9F%E7%BB%84%E5%90%88%E6%A2%81%E7%9A%84%E7%96%B2%E5%8A%B3%E9%AA%8C%E7%AE%97/%E9%99%84%E5%BD%95J%20%E9%92%A2%E4%B8%8E%E6%B7%B7%E5%87%9D%E5%9C%9F%E7%BB%84%E5%90%88%E6%A2%81%E7%9A%84%E7%96%B2%E5%8A%B3%E9%AA%8C%E7%AE%97.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附录J 钢与混凝土组合梁的疲劳验算
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%99%84%E5%BD%95K%20%E7%96%B2%E5%8A%B3%E8%AE%A1%E7%AE%97%E7%9A%84%E6%9E%84%E4%BB%B6%E5%92%8C%E8%BF%9E%E6%8E%A5%E5%88%86%E7%B1%BB/%E9%99%84%E5%BD%95K%20%E7%96%B2%E5%8A%B3%E8%AE%A1%E7%AE%97%E7%9A%84%E6%9E%84%E4%BB%B6%E5%92%8C%E8%BF%9E%E6%8E%A5%E5%88%86%E7%B1%BB.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附录K 疲劳计算的构件和连接分类
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%9C%AC%E6%A0%87%E5%87%86%E7%94%A8%E8%AF%8D%E8%AF%B4%E6%98%8E/%E6%9C%AC%E6%A0%87%E5%87%86%E7%94%A8%E8%AF%8D%E8%AF%B4%E6%98%8E.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    本标准用词说明
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%BC%95%E7%94%A8%E6%A0%87%E5%87%86%E5%90%8D%E5%BD%95/%E5%BC%95%E7%94%A8%E6%A0%87%E5%87%86%E5%90%8D%E5%BD%95.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    引用标准名录
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%9D%A1%E6%96%87%E8%AF%B4%E6%98%8E/%E6%9D%A1%E6%96%87%E8%AF%B4%E6%98%8E.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    条文说明
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5 结构分析与稳定性设计
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5 结构分析与稳定性设计">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 一般规定
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 初始缺陷
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 一阶弹性分析与设计
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-p-delta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 二阶弹性 $ P-\Delta $ 分析与设计
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#55" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5 直接分析设计法
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>5 结构分析与稳定性设计</h1>
+
+<h2 id="5">5 结构分析与稳定性设计</h2>
+<h3 id="51">5.1 一般规定</h3>
+<p>5.1.1 建筑结构的内力和变形可按结构静力学方法进行弹性或弹塑性分析，采用弹性分析结果进行设计时，截面板件宽厚比等级为 S1、S2、S3 级的构件可有塑性变形发展。</p>
+<p>5.1.2 结构稳定性设计应在结构分析或构件设计中考虑二阶效应。</p>
+<p>5.1.3 结构的计算模型和基本假定应与构件连接的实际性能相符合。</p>
+<p>5.1.4 框架结构的梁柱连接宜采用刚接或铰接。梁柱采用半刚性连接时，应计入梁柱交角变化的影响，在内力分析时，应假定连接的弯矩-转角曲线，并在节点设计时，保证节点的构造与假定的弯矩-转角曲线符合。</p>
+<p>5.1.5 进行桁架杆件内力计算时应符合下列规定：</p>
+<p>1 计算桁架杆件轴力时可采用节点铰接假定；</p>
+<p>2 采用节点板连接的桁架腹杆及荷载作用于节点的弦杆，其杆件截面为单角钢、双角钢或 T 形钢时，可不考虑节点刚性引起的弯矩效应；</p>
+<p>3 除无斜腹杆的空腹桁架外，直接相贯连接的钢管结构节点，当符合本标准第13章各类节点的几何参数适用范围且主管节间长度与截面高度或直径之比不小于12、支管杆间长度与截面高度或直径之比不小于24时，可视为铰接节点；</p>
+<p>4 H形或箱形截面杆件的内力计算宜符合本标准第8.5节的规定。</p>
+<p>5.1.6 结构内力分析可采用一阶弹性分析、二阶弹性分析或直接分析，应根据下列公式计算的最大二阶效应系数  $ \theta_{i,\max}^{II} $  选用适当的结构分析方法。当  $ \theta_{i,\max}^{II} \leq 0.1 $  时，可采用一阶弹性分析；当  $ 0.1 &lt; \theta_{i,\max}^{II} \leq 0.25 $  时，宜采用二阶弹性分析或采用直接分析；当  $ \theta_{i,\max}^{II} &gt; 0.25 $  时，宜增大结构的侧移刚度。</p>
+<p>1 规则框架结构的二阶效应系数可按下式计算：</p>
+<p>$$ \theta_{i}^{\mathrm{I I}}=\frac{\sum N_{\mathrm{k}i}\cdot\Delta u_{i}}{\sum H_{\mathrm{k}i}\cdot h_{i}} $$ </p>
+<p>式中： $ \sum N_{ki} $  ——所计算 i 楼层各柱轴心压力标准值之和（N）；</p>
+<p>$ \sum H_{ki} $ ——产生层间侧移  $ \Delta u $  的计算楼层及以上各层的水平力标准值之和（N）；</p>
+<p>$ h_{i} $ ——所计算 i 楼层的层高（mm）；</p>
+<p>$ \Delta u_{i} $ —— $ \sum H_{ki} $ 作用下按一阶弹性分析求得的计算楼层的层间侧移（mm）。</p>
+<p>2 一般结构的二阶效应系数可按下式计算：</p>
+<p>$$ \theta_{i}^{\mathrm{I I}}=\frac{1}{\eta_{\mathrm{e r}}} $$ </p>
+<p>式中： $ \eta_{cr} $  ——整体结构最低阶弹性临界荷载与荷载设计值的比值。</p>
+<p>5.1.7 二阶  $ P-\Delta $  弹性分析应考虑初始几何缺陷的影响，直接分析应考虑初始几何缺陷和残余应力的影响。</p>
+<p>5.1.8 当对结构进行连续倒塌分析、抗火分析或在其他极端荷载作用下的结构分析时，可采用静力直接分析或动力直接分析。</p>
+<p>5.1.9 以整体受压或受拉为主的大跨度钢结构的稳定性分析应采用二阶弹性分析或直接分析。</p>
+<h3 id="52">5.2 初始缺陷</h3>
+<p>5.2.1 结构整体初始几何缺陷模式可按最低阶整体屈曲模态采用。框架及支撑结构整体初始几何缺陷代表值的最大值  $ \Delta_{0} $  （图 5.2.1）可取为 H/250，H 为结构总高度。框架及支撑结构整体初始几何缺陷代表值也可按式(5.2.1-1)确定（图 5.2.1-1）；或可通过在每层柱顶施加假想水平力  $ H_{ni} $  等效考虑，假想水平力可按式（5.2.1-2）计算，施加方向应考虑荷载的最不利组合（图 5.2.1-2）。</p>
+<p>$$ \Delta_{i}=\frac{h_{i}}{250}\sqrt{0.2+\frac{1}{n_{s}}} $$ </p>
+<p>$$ H_{\mathrm{n}i}=\frac{G_{i}}{250}\sqrt{0.2+\frac{1}{n_{\mathrm{s}}}} $$ </p>
+<p>式中： $ \Delta_{i} $  ——所计算 i 楼层的初始几何缺陷代表值（mm）；</p>
+<p>$ n_{s} $ ——结构总层数，当 $ \sqrt{0.2+\frac{1}{n_{s}}}&lt;\frac{2}{3} $ 时取此根号值为 $ \frac{2}{3} $ ；当 $ \sqrt{0.2+\frac{1}{n_{s}}}&gt;1.0 $ 时，取此根号值为1.0；</p>
+<p>$ h_{i} $ ——所计算楼层的高度（mm）；</p>
+<p>$ G_{i} $ ——第i楼层的总重力荷载设计值（N）。</p>
+<div style="text-align: center;"><img src="imgs/5%20结构分析与稳定性设计_page_2_img_0.jpg" alt="Image" width="39%" /></div>
+
+<div style="text-align: center;">（a）框架整体初始几何缺陷代表值</div>
+
+<div style="text-align: center;"><img src="imgs/5%20结构分析与稳定性设计_page_2_img_1.jpg" alt="Image" width="36%" /></div>
+
+<div style="text-align: center;">(b) 框架结构等效水平力</div>
+
+<div style="text-align: center;">图 5.2.1-1 框架结构整体初始几何缺陷代表值及等效水平力</div>
+
+<div style="text-align: center;"><img src="imgs/5%20结构分析与稳定性设计_page_2_img_2.jpg" alt="Image" width="88%" /></div>
+
+<div style="text-align: center;">图 5.2.1-2 框架结构计算模型</div>
+
+<div style="text-align: center;">h-层高，H-水平力， $ H_{nl} $ -假想水平力， $ e_{0} $ -构件中点处的初始变形值</div>
+
+<p>5.2.2 构件的初始缺陷代表值可按式(5.2.2-1)计算确定，该缺陷值包括了残余应力的影响</p>
+<p>（图 5.2.2（a））。构件的初始缺陷也可采用假想均布荷载进行等效简化计算，假想均布荷载可按式（5.2.2-2）确定（图 5.2.2（b））。</p>
+<p>$$ \delta_{\mathbf{0}}=e_{0}\sin\frac{\pi x}{l} $$ </p>
+<p>$$ q_{0}=\frac{8N_{\mathrm{k}}e_{0}}{l^{2}} $$ </p>
+<p>式中： $ \delta_{0} $ ——离构件端部x处的初始变形值（mm）；</p>
+<p>$ e_{0} $ ——构件中点处的初始变形值（mm）；</p>
+<p>x ——离构件端部的距离（mm）;</p>
+<p>l——构件的总长度（mm）；</p>
+<p>$ q_{0} $ ——等效分布荷载（N/mm）；</p>
+<p>$ N_{k} $  ——构件承受的轴力标准值（N）。</p>
+<p>构件初始弯曲缺陷值 $ \frac{e_{0}}{l} $ ，当采用直接分析不按弹塑性分析时，可按表5.2.2取构件综合缺陷代表值，当按本标准第5.5节采用直接分析按弹塑性分析时，应按本标准第5.5.8条或第5.5.9条考虑构件初始缺陷。</p>
+<div style="text-align: center;">表 5.2.2 构件综合缺陷代表值</div>
+
+<table border=1 style='margin: auto; width: max-content;'><tr><td style='text-align: center;'>对应于表7.2.1-1和表7.2.1-2中的 柱子曲线</td><td style='text-align: center;'>二阶分析采用的 $ \frac{e_0}{l} $ 值</td></tr><tr><td style='text-align: center;'>a类</td><td style='text-align: center;'>1/400</td></tr><tr><td style='text-align: center;'>b类</td><td style='text-align: center;'>1/350</td></tr><tr><td style='text-align: center;'>c类</td><td style='text-align: center;'>1/300</td></tr><tr><td style='text-align: center;'>d类</td><td style='text-align: center;'>1/250</td></tr></table>
+
+<div style="text-align: center;"><img src="imgs/5%20结构分析与稳定性设计_page_3_img_0.jpg" alt="Image" width="67%" /></div>
+
+<div style="text-align: center;">(a) 等效几何缺陷</div>
+
+<div style="text-align: center;"><img src="imgs/5%20结构分析与稳定性设计_page_3_img_1.jpg" alt="Image" width="83%" /></div>
+
+<div style="text-align: center;">(b) 假想均布荷载</div>
+
+<div style="text-align: center;">图 5.2.2 构件的初始缺陷</div>
+
+<h3 id="53">5.3 一阶弹性分析与设计</h3>
+<p>5.3.1 钢结构的内力和位移计算采用一阶弹性分析时，应按本标准第6章~第8章的有关规定进行构件设计，应按本标准第11章、第12章的有关规定进行连接和节点设计。</p>
+<p>5.3.2 对于形式和受力复杂的结构，当采用一阶弹性分析方法进行结构分析与设计时，应按结构弹性稳定理论确定构件的计算长度系数，并应按本标准第6章~第8章的有关规定进行构件设计。</p>
+<h3 id="54-p-delta">5.4 二阶弹性  $ P-\Delta $  分析与设计</h3>
+<p>5.4.1 采用仅考虑  $ P-\Delta $  效应的二阶弹性分析时，应按本标准第 5.2.1 条考虑结构的整体初始缺陷，计算结构在各种荷载或作用设计值下的内力和标准值下位移，并应按本标准第 6 章~第 8 章的有关规定进行各结构构件的设计。计算构件轴心受压稳定承载力时，构件计算长度系数  $ \mu $  可取 1.0 或其他认可的值。</p>
+<p>5.4.2 二阶  $ P-\Delta $  效应可按近似的二阶理论对一阶弯矩进行放大来考虑。对无支撑框架结构，杆件杆端的弯矩  $ M_{\Delta}^{II} $  也可采用下列近似公式进行计算：</p>
+<p>$$ M_{\Delta}^{\mathrm{I I}}=M_{\mathrm{q}}+\alpha_{i}^{\mathrm{I I}}M_{\mathrm{H}} $$ </p>
+<p>$$ \alpha_{i}^{\mathrm{I I}}=\frac{1}{1-\theta_{i}^{\mathrm{I I}}} $$ </p>
+<p>式中： $ M_{a} $ ——结构在竖向荷载作用下的一阶弹性弯矩（N·mm）；</p>
+<p>$ M_{\Delta}^{II} $  ——仅考虑  $ P-\Delta $  效应的二阶弯矩（N·mm）；</p>
+<p>$ M_{H} $  ——结构在水平荷载作用下的一阶弹性弯矩（N·mm）；</p>
+<p>$ \theta_{i}^{II} $  ——二阶效应系数，可按本标准第 5.1.6 条规定采用；</p>
+<p>$ \alpha_{i}^{II} $  ——第 i 层杆件的弯矩增大系数；当  $ \alpha_{i}^{II}&gt;1.33 $  时，宜增大结构的侧移刚度。</p>
+<h3 id="55">5.5 直接分析设计法</h3>
+<p>5.5.1 直接分析设计法应采用考虑二阶  $ P-\Delta $  和  $ P-\delta $  效应，按本标准第 5.2.1 条、第 5.2.2 条、第 5.5.8 条和第 5.5.9 条同时考虑结构和构件的初始缺陷、节点连接刚度和其他对结构稳定性有显著影响的因素，允许材料的弹塑性发展和内力重分布，获得各种荷载设计值（作用）下</p>
+<p>的内力和标准值（作用）下位移，同时在分析的所有阶段，各结构构件的设计均应符合本标准第6章~第8章的有关规定，但不需要按计算长度法进行构件受压稳定承载力验算。</p>
+<p>5.5.2 直接分析法不按弹塑性分析时，结构分析应限于第一个塑性铰的形成，对应的荷载水平不应低于荷载设计值，不允许进行内力重分布。</p>
+<p>5.5.3 直接分析法按弹塑性分析时宜采用塑性铰法或塑性区法。塑性铰形成的区域，构件和节点应有足够的延性保证以便内力重分布，允许一个或者多个塑性铰产生，构件的极限状态应根据设计目标及构件在整个结构中的作用来确定。</p>
+<p>5.5.4 直接分析法按弹塑性分析时，钢材的应力-应变关系可为理想弹塑性，屈服强度可取本标准规定的强度设计值，弹性模量按本标准第4.4.8条采用。</p>
+<p>5.5.5 直接分析法按弹塑性分析时，钢结构构件截面应为双轴对称截面或单轴对称截面，塑性铰处截面板件宽厚比等级应为 S1、S2 级，其出现的截面或区域应保证有足够的转动能力。</p>
+<p>5.5.6 当结构采用直接分析设计法进行连续倒塌分析时，结构材料的应力-应变关系宜考虑应变率的影响；进行抗火分析时，应考虑结构材料在高温下的应力-应变关系对结构和构件内力产生的影响。</p>
+<p>5.5.7 结构和构件采用直接分析设计法进行分析和设计时，计算结果可直接作为承载能力极限状态和正常使用极限状态下的设计依据，应按下列公式进行构件截面承载力验算：</p>
+<p>1 当构件有足够侧向支撑以防止侧向失稳时：</p>
+<p>$$ \frac{N}{Af}+\frac{M^{\mathrm{II}}<em>{\mathrm{x}}}{M</em>{\mathrm{cx}}}+\frac{M^{\mathrm{II}}<em>{\mathrm{y}}}{M</em>{\mathrm{cy}}}\leq1.0 $$ </p>
+<p>2 直接分析法不按弹塑性分析或按弹塑性分析但截面板件宽厚比等级不符合 S2 级要求时：</p>
+<p>$$ M_{\mathrm{c x}}=\gamma_{\mathrm{x}}W_{\mathrm{x}}f $$ </p>
+<p>$$ M_{\mathrm{c y}}=\gamma_{\mathrm{y}}W_{\mathrm{y}}f $$ </p>
+<p>3 按弹塑性分析，截面板件宽厚比等级符合 S2 级要求时：</p>
+<p>$$ M_{\mathrm{c x}}=W_{\mathrm{p x}}f $$ </p>
+<p>$$ M_{\mathrm{c y}}=W_{\mathrm{p y}}f $$ </p>
+<p>4 当构件可能产生侧向失稳时：</p>
+<p>$$ \frac{N}{A f}+\frac{M_{\mathrm{x}}^{\mathrm{I I}}}{\varphi_{\mathrm{b}}W_{\mathrm{x}}f}+\frac{M_{\mathrm{y}}^{\mathrm{I I}}}{M_{\mathrm{c y}}}\leq1.0 $$ </p>
+<p>式中： $ M_{x}^{II} $ 、 $ M_{y}^{II} $ ——分别为绕 x 轴、y 轴的二阶弯矩设计值，可由结构分析直接得到</p>
+<p>(N·mm);</p>
+<p>A——构件的毛截面面积（mm $ ^{2} $ ）；</p>
+<p>$ M_{cx} $ 、 $ M_{cy} $ ——分别为绕x轴、y轴的受弯承载力设计值（N·mm）；</p>
+<p>$ W_{x} $ 、 $ W_{y} $ ——当构件板件宽厚比等级为S1级、S2级、S3级或S4级时，为构件绕x轴、y轴的毛截面模量；当构件板件宽厚比等级为S5级时，为构件绕x轴、y轴的有效截面模量（mm $ ^{3} $ ）；</p>
+<p>$ W_{px} $ 、 $ W_{py} $ ——构件绕x轴、y轴的塑性毛截面模量（mm $ ^{3} $ ）；</p>
+<p>$ \gamma_{x} $ 、 $ \gamma_{y} $ ——截面塑性发展系数，应按本标准第6.1.2条的规定采用；</p>
+<p>$ \varphi_{b} $  ——梁的整体稳定系数，应按本标准附录 C 确定。</p>
+<p>5.5.8 采用塑性铰法进行直接分析设计时，除应按本标准第 5.2.1 条、第 5.2.2 条考虑初始缺陷外，当受压构件所受轴力大于 0.5Af 时，其弯曲刚度应乘以刚度折减系数 0.8。</p>
+<p>5.5.9 采用塑性区法进行直接分析设计时，应按不小于 1/1000 的出厂加工精度考虑构件的初始几何缺陷，并考虑初始残余应力。</p>
+<p>5.5.10 大跨度钢结构体系的稳定性分析宜采用直接分析法。结构整体初始几何缺陷模式可按最低阶整体屈曲模态采用，最大缺陷值可取 L/300，L 为结构跨度。构件的初始缺陷可按本标准第 5.2.2 条的规定采用。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs"], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="../../javascripts/config.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
