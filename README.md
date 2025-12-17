@@ -83,33 +83,38 @@
 ---
 
 ### 生成静态文件
- 1. 安装MkDocs和Material主题
-    ```bash
-    pip install mkdocs-material
-    ```
- 1. 在项目根目录下创建`mkdocs.yml`配置文件，参考本项目中的`Books/mkdocs.yml`
- 1. 在项目根目录下创建`docs`文件夹，将Markdown文件放入`docs`文件夹中，参考本项目中的`Books/docs/`
- 1. 数学公式支持，需要修改`mkdocs.yml`文件和添加`javascript`文件，参考本项目中的`Books/mkdocs.yml`和`Books/docs/javascripts/config.js`
- 1. 运行本地预览
-    ```bash
-    mkdocs serve
-    ```
- 1. 生成静态文件
-    ```bash
-    mkdocs build
-    ```
+   1. 安装MkDocs和Material主题
+      ```bash
+      pip install mkdocs-material
+      ```
+   2. 在项目根目录下创建`mkdocs.yml`配置文件，参考本项目中的`Books/mkdocs.yml`
+   3. 在项目根目录下创建`docs`文件夹，将Markdown文件放入`docs`文件夹中，参考本项目中的`Books/docs/`
+   4. 数学公式支持，需要修改`mkdocs.yml`文件和添加`javascript`文件，参考本项目中的`Books/mkdocs.yml`和`Books/docs/javascripts/config.js`
+   5. 运行本地预览
+      ```bash
+      mkdocs serve
+      ```
 
 ### 部署到服务器
 
-  1. `1panel`中创建一个新的网站，设置域名`standards.youtian95.cn`，选择`静态网站`类型
-  1. 阿里云中解析域名`standards.youtian95.cn`到服务器IP地址
-  2. 如果阿里云安全组没有开放`80`和`443`端口，需要去阿里云控制台开放这两个端口
-  3. `1panel`中申请SSL证书，验证方式选择`DNS验证`
-  4. `1panel`网站启用`https`，SSL选择刚才申请的证书
-  5. 上传`site`文件夹到服务器网站根目录，可以使用SCP命令上传
-     ```bash
-     # 先清空远程目录，再上传新文件
-     ssh -i "C:/Users/youti/.ssh/id_ed25519_1panel" root@youtian95.cn "rm -rf /opt/1panel/www/sites/standards.youtian95.cn/index/*"
-     scp -r -i "C:/Users/youti/.ssh/id_ed25519_1panel" ./site/* root@youtian95.cn:/opt/1panel/www/sites/standards.youtian95.cn/index/
-     ```
-     其中`-i`参数指定SSH密钥文件路径，id_ed25519_1panel密钥文件的本地路径在`1panel`中找到
+   1. `1panel`中创建一个新的网站，设置域名`standards.youtian95.cn`，选择`静态网站`类型
+   2. 阿里云中解析域名`standards.youtian95.cn`到服务器IP地址
+   3. 如果阿里云安全组没有开放`80`和`443`端口，需要去阿里云控制台开放这两个端口
+   4. `1panel`中申请SSL证书，验证方式选择`DNS验证`
+   5. `1panel`网站启用`https`，SSL选择刚才申请的证书
+   6. 直接执行`deploy.py`脚本部署
+      ```bash
+      python deploy.py
+      ```
+      或者手动部署：
+      1. 生成静态文件
+         ```bash
+         mkdocs build
+         ```
+      2. 上传`site`文件夹到服务器网站根目录，可以使用SCP命令上传
+         ```bash
+         # 先清空远程目录，再上传新文件
+         ssh -i "C:/Users/youti/.ssh/id_ed25519_1panel" root@youtian95.cn "rm -rf /opt/1panel/www/sites/standards.youtian95.cn/index/*"
+         scp -r -i "C:/Users/youti/.ssh/id_ed25519_1panel" ./site/* root@youtian95.cn:/opt/1panel/www/sites/standards.youtian95.cn/index/
+         ```
+         其中`-i`参数指定SSH密钥文件路径，id_ed25519_1panel密钥文件的本地路径在`1panel`中找到
