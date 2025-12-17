@@ -1,31 +1,51 @@
 import re
 
-def on_page_markdown(markdown, **kwargs):
-    # 1. 标题处理 (Header Processing)
-    # 逻辑与之前一致：将 1.1.1 或 A.1.1 转换为 #### 标题
+def process_headers(markdown):
+    """
+    1. 标题处理 (Header Processing)
+    将 1.1.1 或 A.1.1 转换为 #### 标题
+    同时为标题添加 ID，以便链接跳转
+    返回: (处理后的markdown, 生成的章节ID集合)
+    """
     pattern = re.compile(r'^(?!#)((?:[A-Z]\.)?\d+(?:\.\d+)+)', re.MULTILINE)
+    section_ids = set()
     
     def replace_func(match):
         text = match.group(1)
+        should_convert = False
+        
         if text[0].isalpha():
-            return f'#### {text}\n'
+            should_convert = True
         else:
             if text.count('.') >= 2:
-                return f'#### {text}\n'
-            else:
-                return text
+                should_convert = True
+        
+        if should_convert:
+            # 记录章节号，用于后续链接检查
+            section_ids.add(text)
+            # 添加自定义 ID，例如 #### 1.1.1 {: #sec-1.1.1 }
+            return f'#### {text} {{: #sec-{text} }}\n'
+        else:
+            return text
 
-    markdown = pattern.sub(replace_func, markdown)
-    
-    # 2. 公式自动编号 (Automatic Equation Numbering)
+    new_markdown = pattern.sub(replace_func, markdown)
+    return new_markdown, section_ids
+
+def process_equations(markdown):
+    """
+    2. 公式自动编号 (Automatic Equation Numbering)
+    返回: (处理后的markdown, 生成的公式ID集合)
+    """
     lines = markdown.split('\n')
     new_lines = []
+    generated_ids = set()
     
     current_section = ""
     formula_index = 0
     in_code_block = False
     
     # 匹配我们刚刚生成的标题格式 "#### 1.1.1"
+    # 注意：现在标题后面可能跟有属性列表 {: ... }，所以正则只需要匹配前面的数字部分
     header_check = re.compile(r'^####\s+([A-Z0-9\.]+)')
     
     i = 0
@@ -60,57 +80,73 @@ def on_page_markdown(markdown, **kwargs):
             if current_section:
                 formula_index += 1
                 content = stripped[2:-2]
+                tag_content = f"{current_section}-{formula_index}"
+                
+                # 获取缩进
+                indent = line[:len(line) - len(line.lstrip())]
+                
                 # 如果没有手动编号，则添加自动编号
+                # 例子： $$ E=mc^2 $$ -> $$ E=mc^2 \tag{章节号-序号} $$
                 if '\\tag' not in content:
-                    # 添加 \tag{章节号-序号}
-                    new_line = f'$$ {content} \\tag{{{current_section}-{formula_index}}} $$'
+                    # 将锚点放在公式前面
+                    # 使用 span.eq-anchor 配合 CSS 进行位置修正
+                    anchor = f'{indent}<span id="eq-{tag_content}" class="eq-anchor"></span>'
+                    new_line = f'{anchor}\n\n{indent}$$ {content} \\tag{{{tag_content}}} $$'
                     new_lines.append(new_line)
+                    generated_ids.add(tag_content)
                 else:
                     new_lines.append(line)
             else:
                 new_lines.append(line)
             i += 1
             continue
-            
-        # 情况 B: 多行公式 $$ ...
-        if stripped.startswith('$$'):
-            block_lines = [line]
-            j = i + 1
-            found_end = False
-            
-            # 向下寻找结束符 $$
-            while j < len(lines):
-                l = lines[j]
-                block_lines.append(l)
-                l_stripped = l.strip()
-                
-                if l_stripped == '$$' or l_stripped.endswith('$$'):
-                    found_end = True
-                    # 找到结束符，添加编号
-                    if current_section:
-                        formula_index += 1
-                        tag = f'\\tag{{{current_section}-{formula_index}}}'
-                        
-                        # 插入编号
-                        if l_stripped == '$$':
-                            # 结束符单独一行，编号插入到前一行
-                            block_lines.insert(-1, tag)
-                        else:
-                            # 结束符在行尾，替换 $$ 为 \tag{...} $$
-                            block_lines[-1] = block_lines[-1].replace('$$', f'{tag} $$')
-                    
-                    new_lines.extend(block_lines)
-                    i = j + 1
-                    break
-                j += 1
-            
-            if not found_end:
-                # 未找到结束符，原样保留
-                new_lines.extend(block_lines)
-                i = j
-            continue
 
         new_lines.append(line)
         i += 1
         
-    return '\n'.join(new_lines)
+    return '\n'.join(new_lines), generated_ids
+
+def process_references(markdown, generated_ids, section_ids):
+    """
+    3. 引用链接 (Reference Linking)
+    替换 式（5.2.2-2） 为 [式（5.2.2-2）](#eq-5.2.2-2)
+    替换 第 5.2.1 条 为 [第 5.2.1 条](#sec-5.2.1)
+    仅当引用ID在当前页面生成过时才替换，避免死链。
+    """
+    # --- 公式引用 ---
+    def ref_replace(match):
+        full_text = match.group(0)
+        ref_id = match.group(1)
+        
+        # 检查引用ID是否存在于当前页面
+        if ref_id in generated_ids:
+            return f'[{full_text}](#eq-{ref_id})'
+        else:
+            return full_text
+
+    # 全角括号
+    markdown = re.sub(r'式（([A-Z0-9\.]+-[\d]+)）', ref_replace, markdown)
+    # 半角括号
+    markdown = re.sub(r'式\(([A-Z0-9\.]+-[\d]+)\)', ref_replace, markdown)
+    
+    # --- 章节引用 ---
+    def section_replace(match):
+        full_text = match.group(0)
+        sec_num = match.group(1)
+        
+        # 检查章节ID是否存在于当前页面
+        if sec_num in section_ids:
+            return f'[{full_text}](#sec-{sec_num})'
+        else:
+            return full_text
+            
+    # 匹配 "第 5.2.1 条" 或 "第5.2.1条"
+    markdown = re.sub(r'第\s*([A-Z0-9\.]+)\s*条', section_replace, markdown)
+    
+    return markdown
+
+def on_page_markdown(markdown, **kwargs):
+    markdown, section_ids = process_headers(markdown)
+    markdown, generated_ids = process_equations(markdown)
+    markdown = process_references(markdown, generated_ids, section_ids)
+    return markdown

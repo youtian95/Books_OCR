@@ -10,6 +10,7 @@ theme:
 hooks:
   - hooks.py
 markdown_extensions:
+  - attr_list
   - toc:
       permalink: true
   - pymdownx.arithmatex:
@@ -21,8 +22,8 @@ extra_css:
 extra_javascript:
   - javascripts/config.js
   - javascripts/formatting.js
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
 
 nav:
   - 首页: 
