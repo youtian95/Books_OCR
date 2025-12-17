@@ -68,7 +68,7 @@ D.1.4 节点核芯区截面抗震受剪承载力，应采用下列公式
 
  $$ V_{\mathrm{j}}\leqslant\frac{1}{\gamma_{\mathrm{RE}}}\Big(1.1\eta_{\mathrm{i}}f_{\mathrm{t}}b_{\mathrm{j}}h_{\mathrm{j}}+0.05\eta_{\mathrm{i}}N\frac{b_{\mathrm{j}}}{b_{\mathrm{c}}}+f_{\mathrm{yv}}A_{\mathrm{svj}}\frac{h_{\mathrm{b}0}-a_{\mathrm{s}}^{\prime}}{s}\Big) $$ 
 
-## 9 度的一级
+9 度的一级
 
  $$ V_{\mathrm{j}}\leqslant\frac{1}{\gamma_{\mathrm{RE}}}\Big(0.9\eta_{\mathrm{j}}f_{\mathrm{t}}b_{\mathrm{j}}h_{\mathrm{j}}+f_{\mathrm{yv}}A_{\mathrm{svj}}\frac{h_{\mathrm{b}0}-a_{\mathrm{s}}^{\prime}}{s}\Big) $$ 
 
@@ -98,7 +98,7 @@ D.2.3 核芯区验算方法除应符合一般框架梁柱节点的要求外，�
 
 4 锚入柱内的梁上部钢筋宜大于其全部截面面积的 60%。
 
-### D. 3 圆柱框架的梁柱节点
+### D.3 圆柱框架的梁柱节点
 
 D.3.1 梁中线与柱中线重合时，圆柱框架梁柱节点核芯区组合的剪力设计值应符合下列要求：
 
@@ -110,7 +110,7 @@ D.3.1 梁中线与柱中线重合时，圆柱框架梁柱节点核芯区组合�
 
 D.3.2 梁中线与柱中线重合时，圆柱框架梁柱节点核芯区截面抗震受剪承载力应采用下列公式验算：
 
- $$ \begin{aligned}V_{\mathrm{j}}\leqslant&\frac{1}{\gamma_{\mathrm{RE}}}\Big(1.5\eta_{\mathrm{j}}f_{\mathrm{t}}A_{\mathrm{j}}+0.05\eta_{\mathrm{j}}\frac{N}{D^{2}}A_{\mathrm{j}}+1.57f_{\mathrm{yv}}A_{\mathrm{sh}}\frac{h_{\mathrm{b}0}-a_{\mathrm{s}}^{\prime}}{s}\\&+f_{\mathrm{yv}}A_{\mathrm{svj}}\frac{h_{\mathrm{b}0}-a_{\mathrm{s}}^{\prime}}{s}\Big)\end{aligned}\quad(D.3.2- $$ 
+ $$ \begin{aligned}V_{\mathrm{j}}\leqslant&\frac{1}{\gamma_{\mathrm{RE}}}\Big(1.5\eta_{\mathrm{j}}f_{\mathrm{t}}A_{\mathrm{j}}+0.05\eta_{\mathrm{j}}\frac{N}{D^{2}}A_{\mathrm{j}}+1.57f_{\mathrm{yv}}A_{\mathrm{sh}}\frac{h_{\mathrm{b}0}-a_{\mathrm{s}}^{\prime}}{s}\\&+f_{\mathrm{yv}}A_{\mathrm{svj}}\frac{h_{\mathrm{b}0}-a_{\mathrm{s}}^{\prime}}{s}\Big)\end{aligned} $$ 
 
 9度的一级
 

@@ -27,7 +27,7 @@ C.0.1 等截面焊接工字形和轧制 H 型钢（图 C.0.1）简支梁的整�
 
  $$ \varphi_{\mathrm{b}}=\beta_{\mathrm{b}}\frac{4320}{\lambda_{\mathrm{y}}^{2}}\cdot\frac{A h}{W_{\mathrm{x}}}\left[\sqrt{1+\left(\frac{\lambda_{\mathrm{y}}t_{1}}{4.4h}\right)^{2}}+\eta_{\mathrm{b}}\right]\varepsilon_{\mathrm{k}} $$ 
 
- $$ \lambda_{_{y}}=\frac{l_{_{1}}}{i_{_{y}}} $$ 
+ $$ \lambda_{\mathrm{y}}=\frac{l_{\mathrm{1}}}{i_{\mathrm{y}}} $$ 
 
 截面不对称影响系数  $ \eta_{h} $  应按下列公式计算：
 
@@ -49,7 +49,7 @@ C.0.1 等截面焊接工字形和轧制 H 型钢（图 C.0.1）简支梁的整�
 
 当按公式（C.0.1-1）算得的 $ \varphi_{b} $ 值大于0.6时，应用下式计算的 $ \varphi_{b}^{\prime} $ 代替 $ \varphi_{b} $ 值：
 
- $$ \varphi^{\prime}_{\mathrm{b}}=1.07-\frac{0.282}{\varphi_{\mathrm{b}}}\leq1.0 $$ 
+ $$ \varphi_{\mathrm{b}}^{\prime} = 1.07-\frac{0.282}{\varphi_{\mathrm{b}}} \leq 1.0 $$ 
 
 式中： $ \beta_{b} $  ——梁整体稳定的等效弯矩系数，应按表 C.0.1 采用；
 

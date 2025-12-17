@@ -4,9 +4,14 @@ repo_name: Github仓库
 use_directory_urls: false
 theme:
   name: material
+  language: zh
   features:
     - navigation.tabs
+hooks:
+  - hooks.py
 markdown_extensions:
+  - toc:
+      permalink: true
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.tasklist:
