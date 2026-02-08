@@ -11,13 +11,19 @@
 ---
 
  - [x] 《钢结构设计标准》GB 50017-2017
- - [ ] 《混凝土结构设计规范》GB 50010-2010
+ - [x] 《混凝土结构设计规范》GB 50010-2010
  - [ ] 《建筑结构荷载规范》GB 50009-2012
  - [x] 《建筑抗震设计规范》GB 50011-2010
  - [ ] 《工程结构通用规范》GB 55001-2021
 
 ## PaddleOCR-VL 使用 ([官方文档](https://www.paddleocr.ai/main/version3.x/pipeline_usage/PaddleOCR-VL.html))
 ---
+
+### 直接使用官方网站上传文件识别
+
+现在官方出了在线文档识别服务：https://aistudio.baidu.com/paddleocr
+
+可以直接上传文件进行识别，识别结果可以下载为Markdown格式。不是大量文件识别的话，可以直接使用这个服务。自己搭建服务的话，使用下面的Autodl云端方式。
 
 ### Autodl云端使用步骤
 
@@ -89,9 +95,11 @@
       ```
    2. 在项目根目录下创建`mkdocs.yml`配置文件，参考本项目中的`Books/mkdocs.yml`
    3. 在项目根目录下创建`docs`文件夹，将Markdown文件放入`docs`文件夹中，参考本项目中的`Books/docs/`
-   4. 数学公式支持，需要修改`mkdocs.yml`文件和添加`javascript`文件，参考本项目中的`Books/mkdocs.yml`和`Books/docs/javascripts/config.js`
-   5. 运行本地预览
+   4. 在`mkdocs.yml`文件中添加目录`nav`，参考本项目中的`Books/mkdocs.yml`
+   5. 数学公式支持，需要修改`mkdocs.yml`文件和添加`javascript`文件，参考本项目中的`Books/mkdocs.yml`和`Books/docs/javascripts/config.js`
+   6. 运行本地预览
       ```bash
+      cd Books
       mkdocs serve
       ```
 
@@ -104,6 +112,7 @@
    5. `1panel`网站启用`https`，SSL选择刚才申请的证书
    6. 直接执行`deploy.py`脚本部署
       ```bash
+      cd Books
       python deploy.py
       ```
       或者手动部署：

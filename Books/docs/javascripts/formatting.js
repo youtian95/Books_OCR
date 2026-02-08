@@ -37,7 +37,7 @@
         // 设置样式
         backBtn.style.cssText = `
             position: fixed; 
-            bottom: 40px; 
+            bottom: 60px; 
             left: 20px; 
             z-index: 100; 
             font-size: 24px; 

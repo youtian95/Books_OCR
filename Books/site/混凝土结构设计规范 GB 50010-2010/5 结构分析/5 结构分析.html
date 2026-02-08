@@ -1,0 +1,4228 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../4%20%E6%9D%90%E6%96%99/4%20%E6%9D%90%E6%96%99.html">
+      
+      
+        <link rel="next" href="../6%20%E6%89%BF%E8%BD%BD%E8%83%BD%E5%8A%9B%E6%9E%81%E9%99%90%E7%8A%B6%E6%80%81%E8%AE%A1%E7%AE%97/6%20%E6%89%BF%E8%BD%BD%E8%83%BD%E5%8A%9B%E6%9E%81%E9%99%90%E7%8A%B6%E6%80%81%E8%AE%A1%E7%AE%97.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>5 结构分析 - 土木在线标准</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+  
+      
+
+    
+  <script defer src="https://umami.youtian95.cn/script.js" data-website-id="784eb83d-5394-4b42-a388-f4a1fd1cb6d9"></script>
+
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#sec-5.1.1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="土木在线标准" class="md-header__button md-logo" aria-label="土木在线标准" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            土木在线标准
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              5 结构分析
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/youtian95/Books_OCR" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Github仓库
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../index.html" class="md-tabs__link">
+          
+  
+  
+  首页
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../%E9%92%A2%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1%E6%A0%87%E5%87%86%20GB50017-2017/%E5%B0%81%E9%9D%A2/%E5%B0%81%E9%9D%A2.html" class="md-tabs__link">
+          
+  
+  
+  钢结构设计标准
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../%E5%BB%BA%E7%AD%91%E6%8A%97%E9%9C%87%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83%20GB%2050011-2010/%E5%B0%81%E9%9D%A2/%E5%B0%81%E9%9D%A2.html" class="md-tabs__link">
+          
+  
+  
+  建筑抗震设计规范
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../%E5%B0%81%E9%9D%A2/%E5%B0%81%E9%9D%A2.html" class="md-tabs__link">
+          
+  
+  
+  混凝土结构设计规范
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="土木在线标准" class="md-nav__button md-logo" aria-label="土木在线标准" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    土木在线标准
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/youtian95/Books_OCR" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Github仓库
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    首页
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    土木在线标准
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    钢结构设计标准
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    钢结构设计标准
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%92%A2%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1%E6%A0%87%E5%87%86%20GB50017-2017/%E5%B0%81%E9%9D%A2/%E5%B0%81%E9%9D%A2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    钢结构设计标准
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%92%A2%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1%E6%A0%87%E5%87%86%20GB50017-2017/%E5%89%8D%E8%A8%80/%E5%89%8D%E8%A8%80.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    前言
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%92%A2%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1%E6%A0%87%E5%87%86%20GB50017-2017/%E7%9B%AE%E5%BD%95/%E7%9B%AE%E5%BD%95.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    目录
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%92%A2%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1%E6%A0%87%E5%87%86%20GB50017-2017/1%20%E6%80%BB%E5%88%99/1%20%E6%80%BB%E5%88%99.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1 总则
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%92%A2%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1%E6%A0%87%E5%87%86%20GB50017-2017/2%20%E6%9C%AF%E8%AF%AD%E5%92%8C%E7%AC%A6%E5%8F%B7/2%20%E6%9C%AF%E8%AF%AD%E5%92%8C%E7%AC%A6%E5%8F%B7.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2 术语和符号
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%92%A2%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1%E6%A0%87%E5%87%86%20GB50017-2017/3%20%E5%9F%BA%E6%9C%AC%E8%AE%BE%E8%AE%A1%E8%A7%84%E5%AE%9A/3%20%E5%9F%BA%E6%9C%AC%E8%AE%BE%E8%AE%A1%E8%A7%84%E5%AE%9A.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3 基本设计规定
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%92%A2%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1%E6%A0%87%E5%87%86%20GB50017-2017/4%20%E6%9D%90%E6%96%99/4%20%E6%9D%90%E6%96%99.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4 材料
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%92%A2%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1%E6%A0%87%E5%87%86%20GB50017-2017/5%20%E7%BB%93%E6%9E%84%E5%88%86%E6%9E%90%E4%B8%8E%E7%A8%B3%E5%AE%9A%E6%80%A7%E8%AE%BE%E8%AE%A1/5%20%E7%BB%93%E6%9E%84%E5%88%86%E6%9E%90%E4%B8%8E%E7%A8%B3%E5%AE%9A%E6%80%A7%E8%AE%BE%E8%AE%A1.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5 结构分析与稳定性设计
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%92%A2%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1%E6%A0%87%E5%87%86%20GB50017-2017/6%20%E5%8F%97%E5%BC%AF%E6%9E%84%E4%BB%B6/6%20%E5%8F%97%E5%BC%AF%E6%9E%84%E4%BB%B6.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6 受弯构件
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%92%A2%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1%E6%A0%87%E5%87%86%20GB50017-2017/7%20%E8%BD%B4%E5%BF%83%E5%8F%97%E5%8A%9B%E6%9E%84%E4%BB%B6/7%20%E8%BD%B4%E5%BF%83%E5%8F%97%E5%8A%9B%E6%9E%84%E4%BB%B6.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7 轴心受力构件
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%92%A2%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1%E6%A0%87%E5%87%86%20GB50017-2017/8%20%E6%8B%89%E5%BC%AF%E3%80%81%E5%8E%8B%E5%BC%AF%E6%9E%84%E4%BB%B6/8%20%E6%8B%89%E5%BC%AF%E3%80%81%E5%8E%8B%E5%BC%AF%E6%9E%84%E4%BB%B6.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8 拉弯、压弯构件
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%92%A2%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1%E6%A0%87%E5%87%86%20GB50017-2017/9%20%E5%8A%A0%E5%8A%B2%E9%92%A2%E6%9D%BF%E5%89%AA%E5%8A%9B%E5%A2%99/9%20%E5%8A%A0%E5%8A%B2%E9%92%A2%E6%9D%BF%E5%89%AA%E5%8A%9B%E5%A2%99.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9 加劲钢板剪力墙
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%92%A2%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1%E6%A0%87%E5%87%86%20GB50017-2017/10%20%E5%A1%91%E6%80%A7%E5%8F%8A%E5%BC%AF%E7%9F%A9%E8%B0%83%E5%B9%85%E8%AE%BE%E8%AE%A1/10%20%E5%A1%91%E6%80%A7%E5%8F%8A%E5%BC%AF%E7%9F%A9%E8%B0%83%E5%B9%85%E8%AE%BE%E8%AE%A1.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 塑性及弯矩调幅设计
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%92%A2%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1%E6%A0%87%E5%87%86%20GB50017-2017/11%20%E8%BF%9E%E6%8E%A5/11%20%E8%BF%9E%E6%8E%A5.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11 连接
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%92%A2%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1%E6%A0%87%E5%87%86%20GB50017-2017/12%20%E8%8A%82%E7%82%B9/12%20%E8%8A%82%E7%82%B9.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12 节点
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%92%A2%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1%E6%A0%87%E5%87%86%20GB50017-2017/13%20%E9%92%A2%E7%AE%A1%E8%BF%9E%E6%8E%A5%E8%8A%82%E7%82%B9/13%20%E9%92%A2%E7%AE%A1%E8%BF%9E%E6%8E%A5%E8%8A%82%E7%82%B9.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    13 钢管连接节点
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%92%A2%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1%E6%A0%87%E5%87%86%20GB50017-2017/14%20%E9%92%A2%E4%B8%8E%E6%B7%B7%E5%87%9D%E5%9C%9F%E7%BB%84%E5%90%88%E6%A2%81/14%20%E9%92%A2%E4%B8%8E%E6%B7%B7%E5%87%9D%E5%9C%9F%E7%BB%84%E5%90%88%E6%A2%81.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    14 钢与混凝土组合梁
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%92%A2%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1%E6%A0%87%E5%87%86%20GB50017-2017/15%20%E9%92%A2%E7%AE%A1%E6%B7%B7%E5%87%9D%E5%9C%9F%E6%9F%B1%E5%8F%8A%E8%8A%82%E7%82%B9/15%20%E9%92%A2%E7%AE%A1%E6%B7%B7%E5%87%9D%E5%9C%9F%E6%9F%B1%E5%8F%8A%E8%8A%82%E7%82%B9.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    15 钢管混凝土柱及节点
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%92%A2%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1%E6%A0%87%E5%87%86%20GB50017-2017/16%20%E7%96%B2%E5%8A%B3%E8%AE%A1%E7%AE%97%E5%8F%8A%E9%98%B2%E8%84%86%E6%96%AD%E8%AE%BE%E8%AE%A1/16%20%E7%96%B2%E5%8A%B3%E8%AE%A1%E7%AE%97%E5%8F%8A%E9%98%B2%E8%84%86%E6%96%AD%E8%AE%BE%E8%AE%A1.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    16 疲劳计算及防脆断设计
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%92%A2%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1%E6%A0%87%E5%87%86%20GB50017-2017/17%20%E9%92%A2%E7%BB%93%E6%9E%84%E6%8A%97%E9%9C%87%E6%80%A7%E8%83%BD%E5%8C%96%E8%AE%BE%E8%AE%A1/17%20%E9%92%A2%E7%BB%93%E6%9E%84%E6%8A%97%E9%9C%87%E6%80%A7%E8%83%BD%E5%8C%96%E8%AE%BE%E8%AE%A1.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    17 钢结构抗震性能化设计
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%92%A2%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1%E6%A0%87%E5%87%86%20GB50017-2017/18%20%E9%92%A2%E7%BB%93%E6%9E%84%E9%98%B2%E6%8A%A4/18%20%E9%92%A2%E7%BB%93%E6%9E%84%E9%98%B2%E6%8A%A4.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    18 钢结构防护
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%92%A2%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1%E6%A0%87%E5%87%86%20GB50017-2017/%E9%99%84%E5%BD%95A%20%E5%B8%B8%E7%94%A8%E5%BB%BA%E7%AD%91%E7%BB%93%E6%9E%84%E4%BD%93%E7%B3%BB/%E9%99%84%E5%BD%95A%20%E5%B8%B8%E7%94%A8%E5%BB%BA%E7%AD%91%E7%BB%93%E6%9E%84%E4%BD%93%E7%B3%BB.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附录A 常用建筑结构体系
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%92%A2%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1%E6%A0%87%E5%87%86%20GB50017-2017/%E9%99%84%E5%BD%95B%20%E7%BB%93%E6%9E%84%E6%88%96%E6%9E%84%E4%BB%B6%E7%9A%84%E5%8F%98%E5%BD%A2%E5%AE%B9%E8%AE%B8%E5%80%BC/%E9%99%84%E5%BD%95B%20%E7%BB%93%E6%9E%84%E6%88%96%E6%9E%84%E4%BB%B6%E7%9A%84%E5%8F%98%E5%BD%A2%E5%AE%B9%E8%AE%B8%E5%80%BC.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附录B 结构或构件的变形容许值
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%92%A2%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1%E6%A0%87%E5%87%86%20GB50017-2017/%E9%99%84%E5%BD%95C%20%E6%A2%81%E7%9A%84%E6%95%B4%E4%BD%93%E7%A8%B3%E5%AE%9A%E7%B3%BB%E6%95%B0/%E9%99%84%E5%BD%95C%20%E6%A2%81%E7%9A%84%E6%95%B4%E4%BD%93%E7%A8%B3%E5%AE%9A%E7%B3%BB%E6%95%B0.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附录C 梁的整体稳定系数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%92%A2%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1%E6%A0%87%E5%87%86%20GB50017-2017/%E9%99%84%E5%BD%95D%20%E8%BD%B4%E5%BF%83%E5%8F%97%E5%8E%8B%E6%9E%84%E4%BB%B6%E7%9A%84%E7%A8%B3%E5%AE%9A%E7%B3%BB%E6%95%B0/%E9%99%84%E5%BD%95D%20%E8%BD%B4%E5%BF%83%E5%8F%97%E5%8E%8B%E6%9E%84%E4%BB%B6%E7%9A%84%E7%A8%B3%E5%AE%9A%E7%B3%BB%E6%95%B0.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附录D 轴心受压构件的稳定系数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%92%A2%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1%E6%A0%87%E5%87%86%20GB50017-2017/%E9%99%84%E5%BD%95%20E%20%E6%9F%B1%E7%9A%84%E8%AE%A1%E7%AE%97%E9%95%BF%E5%BA%A6%E7%B3%BB%E6%95%B0/%E9%99%84%E5%BD%95%20E%20%E6%9F%B1%E7%9A%84%E8%AE%A1%E7%AE%97%E9%95%BF%E5%BA%A6%E7%B3%BB%E6%95%B0.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附录 E 柱的计算长度系数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%92%A2%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1%E6%A0%87%E5%87%86%20GB50017-2017/%E9%99%84%E5%BD%95F%20%E5%8A%A0%E5%8A%B2%E9%92%A2%E6%9D%BF%E5%89%AA%E5%8A%9B%E5%A2%99%E7%9A%84%E5%BC%B9%E6%80%A7%E5%B1%88%E6%9B%B2%E4%B8%B4%E7%95%8C%E5%BA%94%E5%8A%9B/%E9%99%84%E5%BD%95F%20%E5%8A%A0%E5%8A%B2%E9%92%A2%E6%9D%BF%E5%89%AA%E5%8A%9B%E5%A2%99%E7%9A%84%E5%BC%B9%E6%80%A7%E5%B1%88%E6%9B%B2%E4%B8%B4%E7%95%8C%E5%BA%94%E5%8A%9B.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附录 F 加劲钢板剪力墙的弹性屈曲临界应力
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%92%A2%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1%E6%A0%87%E5%87%86%20GB50017-2017/%E9%99%84%E5%BD%95G%20%E6%A1%81%E6%9E%B6%E8%8A%82%E7%82%B9%E6%9D%BF%E5%9C%A8%E6%96%9C%E8%85%B9%E6%9D%86%E5%8E%8B%E5%8A%9B%E4%BD%9C%E7%94%A8%E4%B8%8B%E7%9A%84%E7%A8%B3%E5%AE%9A%E8%AE%A1%E7%AE%97/%E9%99%84%E5%BD%95G%20%E6%A1%81%E6%9E%B6%E8%8A%82%E7%82%B9%E6%9D%BF%E5%9C%A8%E6%96%9C%E8%85%B9%E6%9D%86%E5%8E%8B%E5%8A%9B%E4%BD%9C%E7%94%A8%E4%B8%8B%E7%9A%84%E7%A8%B3%E5%AE%9A%E8%AE%A1%E7%AE%97.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附录G 桁架节点板在斜腹杆压力作用下的稳定计算
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%92%A2%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1%E6%A0%87%E5%87%86%20GB50017-2017/%E9%99%84%E5%BD%95H%20%E6%97%A0%E5%8A%A0%E5%8A%B2%E9%92%A2%E7%AE%A1%E7%9B%B4%E6%8E%A5%E7%84%8A%E6%8E%A5%E8%8A%82%E7%82%B9%E5%88%9A%E5%BA%A6%E5%88%A4%E5%88%AB/%E9%99%84%E5%BD%95H%20%E6%97%A0%E5%8A%A0%E5%8A%B2%E9%92%A2%E7%AE%A1%E7%9B%B4%E6%8E%A5%E7%84%8A%E6%8E%A5%E8%8A%82%E7%82%B9%E5%88%9A%E5%BA%A6%E5%88%A4%E5%88%AB.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附录H 无加劲钢管直接焊接节点刚度判别
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%92%A2%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1%E6%A0%87%E5%87%86%20GB50017-2017/%E9%99%84%E5%BD%95J%20%E9%92%A2%E4%B8%8E%E6%B7%B7%E5%87%9D%E5%9C%9F%E7%BB%84%E5%90%88%E6%A2%81%E7%9A%84%E7%96%B2%E5%8A%B3%E9%AA%8C%E7%AE%97/%E9%99%84%E5%BD%95J%20%E9%92%A2%E4%B8%8E%E6%B7%B7%E5%87%9D%E5%9C%9F%E7%BB%84%E5%90%88%E6%A2%81%E7%9A%84%E7%96%B2%E5%8A%B3%E9%AA%8C%E7%AE%97.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附录J 钢与混凝土组合梁的疲劳验算
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%92%A2%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1%E6%A0%87%E5%87%86%20GB50017-2017/%E9%99%84%E5%BD%95K%20%E7%96%B2%E5%8A%B3%E8%AE%A1%E7%AE%97%E7%9A%84%E6%9E%84%E4%BB%B6%E5%92%8C%E8%BF%9E%E6%8E%A5%E5%88%86%E7%B1%BB/%E9%99%84%E5%BD%95K%20%E7%96%B2%E5%8A%B3%E8%AE%A1%E7%AE%97%E7%9A%84%E6%9E%84%E4%BB%B6%E5%92%8C%E8%BF%9E%E6%8E%A5%E5%88%86%E7%B1%BB.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附录K 疲劳计算的构件和连接分类
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%92%A2%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1%E6%A0%87%E5%87%86%20GB50017-2017/%E6%9C%AC%E6%A0%87%E5%87%86%E7%94%A8%E8%AF%8D%E8%AF%B4%E6%98%8E/%E6%9C%AC%E6%A0%87%E5%87%86%E7%94%A8%E8%AF%8D%E8%AF%B4%E6%98%8E.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    本标准用词说明
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%92%A2%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1%E6%A0%87%E5%87%86%20GB50017-2017/%E5%BC%95%E7%94%A8%E6%A0%87%E5%87%86%E5%90%8D%E5%BD%95/%E5%BC%95%E7%94%A8%E6%A0%87%E5%87%86%E5%90%8D%E5%BD%95.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    引用标准名录
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%92%A2%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1%E6%A0%87%E5%87%86%20GB50017-2017/%E6%9D%A1%E6%96%87%E8%AF%B4%E6%98%8E/%E6%9D%A1%E6%96%87%E8%AF%B4%E6%98%8E.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    条文说明
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    建筑抗震设计规范
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    建筑抗震设计规范
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%BB%BA%E7%AD%91%E6%8A%97%E9%9C%87%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83%20GB%2050011-2010/%E5%B0%81%E9%9D%A2/%E5%B0%81%E9%9D%A2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    建筑抗震设计规范
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%BB%BA%E7%AD%91%E6%8A%97%E9%9C%87%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83%20GB%2050011-2010/%E5%85%AC%E5%91%8A/%E5%85%AC%E5%91%8A.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    中华人民共和国住房和城乡建设部 公告 第1199号
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%BB%BA%E7%AD%91%E6%8A%97%E9%9C%87%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83%20GB%2050011-2010/%E4%BF%AE%E8%AE%A2%E8%AF%B4%E6%98%8E/%E4%BF%AE%E8%AE%A2%E8%AF%B4%E6%98%8E.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    修订说明
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%BB%BA%E7%AD%91%E6%8A%97%E9%9C%87%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83%20GB%2050011-2010/%E5%89%8D%E8%A8%80/%E5%89%8D%E8%A8%80.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    前言
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%BB%BA%E7%AD%91%E6%8A%97%E9%9C%87%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83%20GB%2050011-2010/%E7%9B%AE%E6%AC%A1/%E7%9B%AE%E6%AC%A1.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    目次
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%BB%BA%E7%AD%91%E6%8A%97%E9%9C%87%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83%20GB%2050011-2010/Contents/Contents.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contents
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%BB%BA%E7%AD%91%E6%8A%97%E9%9C%87%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83%20GB%2050011-2010/1%20%E6%80%BB%E5%88%99/1%20%E6%80%BB%E5%88%99.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1 总则
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%BB%BA%E7%AD%91%E6%8A%97%E9%9C%87%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83%20GB%2050011-2010/2%20%E6%9C%AF%E8%AF%AD%E5%92%8C%E7%AC%A6%E5%8F%B7/2%20%E6%9C%AF%E8%AF%AD%E5%92%8C%E7%AC%A6%E5%8F%B7.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2 术语和符号
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%BB%BA%E7%AD%91%E6%8A%97%E9%9C%87%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83%20GB%2050011-2010/3%20%E5%9F%BA%E6%9C%AC%E8%A7%84%E5%AE%9A/3%20%E5%9F%BA%E6%9C%AC%E8%A7%84%E5%AE%9A.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3 基本规定
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%BB%BA%E7%AD%91%E6%8A%97%E9%9C%87%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83%20GB%2050011-2010/4%20%E5%9C%BA%E5%9C%B0%E3%80%81%E5%9C%B0%E5%9F%BA%E5%92%8C%E5%9F%BA%E7%A1%80/4%20%E5%9C%BA%E5%9C%B0%E3%80%81%E5%9C%B0%E5%9F%BA%E5%92%8C%E5%9F%BA%E7%A1%80.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4 场地、地基和基础
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%BB%BA%E7%AD%91%E6%8A%97%E9%9C%87%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83%20GB%2050011-2010/5%20%E5%9C%B0%E9%9C%87%E4%BD%9C%E7%94%A8%E5%92%8C%E7%BB%93%E6%9E%84%E6%8A%97%E9%9C%87%E9%AA%8C%E7%AE%97/5%20%E5%9C%B0%E9%9C%87%E4%BD%9C%E7%94%A8%E5%92%8C%E7%BB%93%E6%9E%84%E6%8A%97%E9%9C%87%E9%AA%8C%E7%AE%97.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5 地震作用和结构抗震验算
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%BB%BA%E7%AD%91%E6%8A%97%E9%9C%87%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83%20GB%2050011-2010/6%20%E5%A4%9A%E5%B1%82%E5%92%8C%E9%AB%98%E5%B1%82%E9%92%A2%E7%AD%8B%E6%B7%B7%E5%87%9D%E5%9C%9F%E6%88%BF%E5%B1%8B/6%20%E5%A4%9A%E5%B1%82%E5%92%8C%E9%AB%98%E5%B1%82%E9%92%A2%E7%AD%8B%E6%B7%B7%E5%87%9D%E5%9C%9F%E6%88%BF%E5%B1%8B.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6 多层和高层钢筋混凝土房屋
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%BB%BA%E7%AD%91%E6%8A%97%E9%9C%87%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83%20GB%2050011-2010/7%20%E5%A4%9A%E5%B1%82%E7%A0%8C%E4%BD%93%E6%88%BF%E5%B1%8B%E5%92%8C%E5%BA%95%E9%83%A8%E6%A1%86%E6%9E%B6%E7%A0%8C%E4%BD%93%E6%88%BF%E5%B1%8B/7%20%E5%A4%9A%E5%B1%82%E7%A0%8C%E4%BD%93%E6%88%BF%E5%B1%8B%E5%92%8C%E5%BA%95%E9%83%A8%E6%A1%86%E6%9E%B6%E7%A0%8C%E4%BD%93%E6%88%BF%E5%B1%8B.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7 多层砌体房屋和底部框架砌体房屋
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%BB%BA%E7%AD%91%E6%8A%97%E9%9C%87%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83%20GB%2050011-2010/8%20%E5%A4%9A%E5%B1%82%E5%92%8C%E9%AB%98%E5%B1%82%E9%92%A2%E7%BB%93%E6%9E%84%E6%88%BF%E5%B1%8B/8%20%E5%A4%9A%E5%B1%82%E5%92%8C%E9%AB%98%E5%B1%82%E9%92%A2%E7%BB%93%E6%9E%84%E6%88%BF%E5%B1%8B.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8 多层和高层钢结构房屋
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%BB%BA%E7%AD%91%E6%8A%97%E9%9C%87%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83%20GB%2050011-2010/9%20%E5%8D%95%E5%B1%82%E5%B7%A5%E4%B8%9A%E5%8E%82%E6%88%BF/9%20%E5%8D%95%E5%B1%82%E5%B7%A5%E4%B8%9A%E5%8E%82%E6%88%BF.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9 单层工业厂房
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%BB%BA%E7%AD%91%E6%8A%97%E9%9C%87%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83%20GB%2050011-2010/10%20%E7%A9%BA%E6%97%B7%E6%88%BF%E5%B1%8B%E5%92%8C%E5%A4%A7%E8%B7%A8%E5%B1%8B%E7%9B%96%E5%BB%BA%E7%AD%91/10%20%E7%A9%BA%E6%97%B7%E6%88%BF%E5%B1%8B%E5%92%8C%E5%A4%A7%E8%B7%A8%E5%B1%8B%E7%9B%96%E5%BB%BA%E7%AD%91.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 空旷房屋和大跨屋盖建筑
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%BB%BA%E7%AD%91%E6%8A%97%E9%9C%87%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83%20GB%2050011-2010/11%20%E5%A3%AB%E3%80%81%E6%9C%A8%E3%80%81%E7%9F%B3%E7%BB%93%E6%9E%84%E6%88%BF%E5%B1%8B/11%20%E5%A3%AB%E3%80%81%E6%9C%A8%E3%80%81%E7%9F%B3%E7%BB%93%E6%9E%84%E6%88%BF%E5%B1%8B.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11 士、木、石结构房屋
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%BB%BA%E7%AD%91%E6%8A%97%E9%9C%87%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83%20GB%2050011-2010/12%20%E9%9A%94%E9%9C%87%E5%92%8C%E6%B6%88%E8%83%BD%E5%87%8F%E9%9C%87%E8%AE%BE%E8%AE%A1/12%20%E9%9A%94%E9%9C%87%E5%92%8C%E6%B6%88%E8%83%BD%E5%87%8F%E9%9C%87%E8%AE%BE%E8%AE%A1.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12 隔震和消能减震设计
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%BB%BA%E7%AD%91%E6%8A%97%E9%9C%87%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83%20GB%2050011-2010/13%20%E9%9D%9E%E7%BB%93%E6%9E%84%E6%9E%84%E4%BB%B6/13%20%E9%9D%9E%E7%BB%93%E6%9E%84%E6%9E%84%E4%BB%B6.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    13 非结构构件
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%BB%BA%E7%AD%91%E6%8A%97%E9%9C%87%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83%20GB%2050011-2010/14%20%E5%9C%B0%E4%B8%8B%E5%BB%BA%E7%AD%91/14%20%E5%9C%B0%E4%B8%8B%E5%BB%BA%E7%AD%91.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    14 地下建筑
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%BB%BA%E7%AD%91%E6%8A%97%E9%9C%87%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83%20GB%2050011-2010/%E9%99%84%E5%BD%95A%20%E6%88%91%E5%9B%BD%E4%B8%BB%E8%A6%81%E5%9F%8E%E9%95%87%E6%8A%97%E9%9C%87%E8%AE%BE%E9%98%B2%E7%83%88%E5%BA%A6%E3%80%81%E8%AE%BE%E8%AE%A1%E5%9F%BA%E6%9C%AC%E5%9C%B0%E9%9C%87%E5%8A%A0%E9%80%9F%E5%BA%A6%E5%92%8C%E8%AE%BE%E8%AE%A1%E5%9C%B0%E9%9C%87%E5%88%86%E7%BB%84/%E9%99%84%E5%BD%95A%20%E6%88%91%E5%9B%BD%E4%B8%BB%E8%A6%81%E5%9F%8E%E9%95%87%E6%8A%97%E9%9C%87%E8%AE%BE%E9%98%B2%E7%83%88%E5%BA%A6%E3%80%81%E8%AE%BE%E8%AE%A1%E5%9F%BA%E6%9C%AC%E5%9C%B0%E9%9C%87%E5%8A%A0%E9%80%9F%E5%BA%A6%E5%92%8C%E8%AE%BE%E8%AE%A1%E5%9C%B0%E9%9C%87%E5%88%86%E7%BB%84.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附录 A 我国主要城镇抗震设防烈度、设计基本地震加速度和设计地震分组
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%BB%BA%E7%AD%91%E6%8A%97%E9%9C%87%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83%20GB%2050011-2010/%E9%99%84%E5%BD%95B%20%E9%AB%98%E5%BC%BA%E6%B7%B7%E5%87%9D%E5%9C%9F%E7%BB%93%E6%9E%84%E6%8A%97%E9%9C%87%E8%AE%BE%E8%AE%A1%E8%A6%81%E6%B1%82/%E9%99%84%E5%BD%95B%20%E9%AB%98%E5%BC%BA%E6%B7%B7%E5%87%9D%E5%9C%9F%E7%BB%93%E6%9E%84%E6%8A%97%E9%9C%87%E8%AE%BE%E8%AE%A1%E8%A6%81%E6%B1%82.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附录B 高强混凝土结构抗震设计要求
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%BB%BA%E7%AD%91%E6%8A%97%E9%9C%87%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83%20GB%2050011-2010/%E9%99%84%E5%BD%95C%20%E9%A2%84%E5%BA%94%E5%8A%9B%E6%B7%B7%E5%87%9D%E5%9C%9F%E7%BB%93%E6%9E%84%E6%8A%97%E9%9C%87%E8%AE%BE%E8%AE%A1%E8%A6%81%E6%B1%82/%E9%99%84%E5%BD%95C%20%E9%A2%84%E5%BA%94%E5%8A%9B%E6%B7%B7%E5%87%9D%E5%9C%9F%E7%BB%93%E6%9E%84%E6%8A%97%E9%9C%87%E8%AE%BE%E8%AE%A1%E8%A6%81%E6%B1%82.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附录C 预应力混凝土结构抗震设计要求
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%BB%BA%E7%AD%91%E6%8A%97%E9%9C%87%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83%20GB%2050011-2010/%E9%99%84%E5%BD%95D%20%E6%A1%86%E6%9E%B6%E6%A2%81%E6%9F%B1%E8%8A%82%E7%82%B9%E6%A0%B8%E8%8A%AF%E5%8C%BA%E6%88%AA%E9%9D%A2%E6%8A%97%E9%9C%87%E9%AA%8C%E7%AE%97/%E9%99%84%E5%BD%95D%20%E6%A1%86%E6%9E%B6%E6%A2%81%E6%9F%B1%E8%8A%82%E7%82%B9%E6%A0%B8%E8%8A%AF%E5%8C%BA%E6%88%AA%E9%9D%A2%E6%8A%97%E9%9C%87%E9%AA%8C%E7%AE%97.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附录D 框架梁柱节点核芯区截面抗震验算
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%BB%BA%E7%AD%91%E6%8A%97%E9%9C%87%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83%20GB%2050011-2010/%E9%99%84%E5%BD%95E%20%E8%BD%AC%E6%8D%A2%E5%B1%82%E7%BB%93%E6%9E%84%E7%9A%84%E6%8A%97%E9%9C%87%E8%AE%BE%E8%AE%A1%E8%A6%81%E6%B1%82/%E9%99%84%E5%BD%95E%20%E8%BD%AC%E6%8D%A2%E5%B1%82%E7%BB%93%E6%9E%84%E7%9A%84%E6%8A%97%E9%9C%87%E8%AE%BE%E8%AE%A1%E8%A6%81%E6%B1%82.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附录E 转换层结构的抗震设计要求
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%BB%BA%E7%AD%91%E6%8A%97%E9%9C%87%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83%20GB%2050011-2010/%E9%99%84%E5%BD%95F%20%E9%85%8D%E7%AD%8B%E6%B7%B7%E5%87%9D%E5%9C%9F%E5%B0%8F%E5%9E%8B%E7%A9%BA%E5%BF%83%E7%A0%8C%E5%9D%97%E6%8A%97%E9%9C%87%E5%A2%99%E6%88%BF%E5%B1%8B%E6%8A%97%E9%9C%87%E8%AE%BE%E8%AE%A1%E8%A6%81%E6%B1%82/%E9%99%84%E5%BD%95F%20%E9%85%8D%E7%AD%8B%E6%B7%B7%E5%87%9D%E5%9C%9F%E5%B0%8F%E5%9E%8B%E7%A9%BA%E5%BF%83%E7%A0%8C%E5%9D%97%E6%8A%97%E9%9C%87%E5%A2%99%E6%88%BF%E5%B1%8B%E6%8A%97%E9%9C%87%E8%AE%BE%E8%AE%A1%E8%A6%81%E6%B1%82.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附录F 配筋混凝土小型空心砌块抗震墙房屋抗震设计要求
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%BB%BA%E7%AD%91%E6%8A%97%E9%9C%87%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83%20GB%2050011-2010/%E9%99%84%E5%BD%95G%20%E9%92%A2%E6%94%AF%E6%92%91-%E6%B7%B7%E5%87%9D%E5%9C%9F%E6%A1%86%E6%9E%B6%E5%92%8C%E9%92%A2%E6%A1%86%E6%9E%B6-%E9%92%A2%E7%AD%8B%E6%B7%B7%E5%87%9D%E5%9C%9F%E6%A0%B8%E5%BF%83%E7%AD%92%E7%BB%93%E6%9E%84%E6%88%BF%E5%B1%8B%E6%8A%97%E9%9C%87%E8%AE%BE%E8%AE%A1%E8%A6%81%E6%B1%82/%E9%99%84%E5%BD%95G%20%E9%92%A2%E6%94%AF%E6%92%91-%E6%B7%B7%E5%87%9D%E5%9C%9F%E6%A1%86%E6%9E%B6%E5%92%8C%E9%92%A2%E6%A1%86%E6%9E%B6-%E9%92%A2%E7%AD%8B%E6%B7%B7%E5%87%9D%E5%9C%9F%E6%A0%B8%E5%BF%83%E7%AD%92%E7%BB%93%E6%9E%84%E6%88%BF%E5%B1%8B%E6%8A%97%E9%9C%87%E8%AE%BE%E8%AE%A1%E8%A6%81%E6%B1%82.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附录G 钢支撑-混凝土框架和钢框架-钢筋混凝土核心筒结构房屋抗震设计要求
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%BB%BA%E7%AD%91%E6%8A%97%E9%9C%87%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83%20GB%2050011-2010/%E9%99%84%E5%BD%95H%20%E5%A4%9A%E5%B1%82%E5%B7%A5%E4%B8%9A%E5%8E%82%E6%88%BF%E6%8A%97%E9%9C%87%E8%AE%BE%E8%AE%A1%E8%A6%81%E6%B1%82/%E9%99%84%E5%BD%95H%20%E5%A4%9A%E5%B1%82%E5%B7%A5%E4%B8%9A%E5%8E%82%E6%88%BF%E6%8A%97%E9%9C%87%E8%AE%BE%E8%AE%A1%E8%A6%81%E6%B1%82.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附录H 多层工业厂房抗震设计要求
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%BB%BA%E7%AD%91%E6%8A%97%E9%9C%87%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83%20GB%2050011-2010/%E9%99%84%E5%BD%95J%20%E5%8D%95%E5%B1%82%E5%8E%82%E6%88%BF%E6%A8%AA%E5%90%91%E5%B9%B3%E9%9D%A2%E6%8E%92%E6%9E%B6%E5%9C%B0%E9%9C%87%E4%BD%9C%E7%94%A8%E6%95%88%E5%BA%94%E8%B0%83%E6%95%B4/%E9%99%84%E5%BD%95J%20%E5%8D%95%E5%B1%82%E5%8E%82%E6%88%BF%E6%A8%AA%E5%90%91%E5%B9%B3%E9%9D%A2%E6%8E%92%E6%9E%B6%E5%9C%B0%E9%9C%87%E4%BD%9C%E7%94%A8%E6%95%88%E5%BA%94%E8%B0%83%E6%95%B4.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附录J 单层厂房横向平面排架 地震作用效应调整
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%BB%BA%E7%AD%91%E6%8A%97%E9%9C%87%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83%20GB%2050011-2010/%E9%99%84%E5%BD%95K%20%E5%8D%95%E5%B1%82%E5%8E%82%E6%88%BF%E7%BA%B5%E5%90%91%E6%8A%97%E9%9C%87%E9%AA%8C%E7%AE%97/%E9%99%84%E5%BD%95K%20%E5%8D%95%E5%B1%82%E5%8E%82%E6%88%BF%E7%BA%B5%E5%90%91%E6%8A%97%E9%9C%87%E9%AA%8C%E7%AE%97.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附录K 单层厂房纵向抗震验算
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%BB%BA%E7%AD%91%E6%8A%97%E9%9C%87%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83%20GB%2050011-2010/%E9%99%84%E5%BD%95L%20%E9%9A%94%E9%9C%87%E8%AE%BE%E8%AE%A1%E7%AE%80%E5%8C%96%E8%AE%A1%E7%AE%97%E5%92%8C%E7%A0%8C%E4%BD%93%E7%BB%93%E6%9E%84%E9%9A%94%E9%9C%87%E6%8E%AA%E6%96%BD/%E9%99%84%E5%BD%95L%20%E9%9A%94%E9%9C%87%E8%AE%BE%E8%AE%A1%E7%AE%80%E5%8C%96%E8%AE%A1%E7%AE%97%E5%92%8C%E7%A0%8C%E4%BD%93%E7%BB%93%E6%9E%84%E9%9A%94%E9%9C%87%E6%8E%AA%E6%96%BD.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附录L 隔震设计简化计算和砌体结构隔震措施
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%BB%BA%E7%AD%91%E6%8A%97%E9%9C%87%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83%20GB%2050011-2010/%E9%99%84%E5%BD%95M%20%E5%AE%9E%E7%8E%B0%E6%8A%97%E9%9C%87%E6%80%A7%E8%83%BD%E8%AE%BE%E8%AE%A1%E7%9B%AE%E6%A0%87%E7%9A%84%E5%8F%82%E8%80%83%E6%96%B9%E6%B3%95/%E9%99%84%E5%BD%95M%20%E5%AE%9E%E7%8E%B0%E6%8A%97%E9%9C%87%E6%80%A7%E8%83%BD%E8%AE%BE%E8%AE%A1%E7%9B%AE%E6%A0%87%E7%9A%84%E5%8F%82%E8%80%83%E6%96%B9%E6%B3%95.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附录M 实现抗震性能设计目标的参考方法
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%BB%BA%E7%AD%91%E6%8A%97%E9%9C%87%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83%20GB%2050011-2010/%E6%9C%AC%E8%A7%84%E8%8C%83%E7%94%A8%E8%AF%8D%E8%AF%B4%E6%98%8E/%E6%9C%AC%E8%A7%84%E8%8C%83%E7%94%A8%E8%AF%8D%E8%AF%B4%E6%98%8E.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    本规范用词说明
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%BB%BA%E7%AD%91%E6%8A%97%E9%9C%87%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83%20GB%2050011-2010/%E5%BC%95%E7%94%A8%E6%A0%87%E5%87%86%E5%90%8D%E5%BD%95/%E5%BC%95%E7%94%A8%E6%A0%87%E5%87%86%E5%90%8D%E5%BD%95.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    引用标准名录
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%BB%BA%E7%AD%91%E6%8A%97%E9%9C%87%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83%20GB%2050011-2010/%E6%9D%A1%E6%96%87%E8%AF%B4%E6%98%8E/%E6%9D%A1%E6%96%87%E8%AF%B4%E6%98%8E.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    条文说明
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    混凝土结构设计规范
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    混凝土结构设计规范
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%B0%81%E9%9D%A2/%E5%B0%81%E9%9D%A2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    封面
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%85%AC%E5%91%8A/%E5%85%AC%E5%91%8A.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    中华人民共和国住房和城乡建设部 公告
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E4%BF%AE%E8%AE%A2%E8%AF%B4%E6%98%8E/%E4%BF%AE%E8%AE%A2%E8%AF%B4%E6%98%8E.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    修订说明
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%89%8D%E8%A8%80/%E5%89%8D%E8%A8%80.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    前言
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%9B%AE%E6%AC%A1/%E7%9B%AE%E6%AC%A1.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    目次
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Contents/Contents.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contents
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1%20%E6%80%BB%E5%88%99/1%20%E6%80%BB%E5%88%99.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1 总则
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2%20%E6%9C%AF%E8%AF%AD%E5%92%8C%E7%AC%A6%E5%8F%B7/2%20%E6%9C%AF%E8%AF%AD%E5%92%8C%E7%AC%A6%E5%8F%B7.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2 术语和符号
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3%20%E5%9F%BA%E6%9C%AC%E8%AE%BE%E8%AE%A1%E8%A7%84%E5%AE%9A/3%20%E5%9F%BA%E6%9C%AC%E8%AE%BE%E8%AE%A1%E8%A7%84%E5%AE%9A.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3 基本设计规定
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4%20%E6%9D%90%E6%96%99/4%20%E6%9D%90%E6%96%99.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4 材料
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5 结构分析
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="5%20%E7%BB%93%E6%9E%84%E5%88%86%E6%9E%90.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5 结构分析
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sec-5.1.1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1.1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sec-5.1.2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1.2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sec-5.1.3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1.3
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sec-5.1.4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1.4
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sec-5.1.5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1.5
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sec-5.1.6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1.6
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sec-5.2.1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2.1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sec-5.2.2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2.2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sec-5.2.3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2.3
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sec-5.2.4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2.4
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sec-5.2.5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2.5
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sec-5.3.1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3.1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sec-5.3.2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3.2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sec-5.3.3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3.3
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sec-5.3.4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3.4
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sec-5.3.5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3.5
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sec-5.4.1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4.1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sec-5.4.2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4.2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sec-5.4.3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4.3
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sec-5.4.4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4.4
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sec-5.5.1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5.1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sec-5.5.2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5.2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sec-5.5.3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5.3
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sec-5.6.1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.6.1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sec-5.6.2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.6.2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sec-5.6.3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.6.3
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sec-5.7.1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.7.1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sec-5.7.2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.7.2
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6%20%E6%89%BF%E8%BD%BD%E8%83%BD%E5%8A%9B%E6%9E%81%E9%99%90%E7%8A%B6%E6%80%81%E8%AE%A1%E7%AE%97/6%20%E6%89%BF%E8%BD%BD%E8%83%BD%E5%8A%9B%E6%9E%81%E9%99%90%E7%8A%B6%E6%80%81%E8%AE%A1%E7%AE%97.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6 承载能力极限状态计算
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7%20%E6%AD%A3%E5%B8%B8%E4%BD%BF%E7%94%A8%E6%9E%81%E9%99%90%E7%8A%B6%E6%80%81%E9%AA%8C%E7%AE%97/7%20%E6%AD%A3%E5%B8%B8%E4%BD%BF%E7%94%A8%E6%9E%81%E9%99%90%E7%8A%B6%E6%80%81%E9%AA%8C%E7%AE%97.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7 正常使用极限状态验算
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../8%20%E6%9E%84%E9%80%A0%E8%A7%84%E5%AE%9A/8%20%E6%9E%84%E9%80%A0%E8%A7%84%E5%AE%9A.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8 构造规定
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../9%20%E7%BB%93%E6%9E%84%E6%9E%84%E4%BB%B6%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%A7%84%E5%AE%9A/9%20%E7%BB%93%E6%9E%84%E6%9E%84%E4%BB%B6%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%A7%84%E5%AE%9A.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9 结构构件的基本规定
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10%20%E9%A2%84%E5%BA%94%E5%8A%9B%E6%B7%B7%E5%87%9D%E5%9C%9F%E7%BB%93%E6%9E%84%E6%9E%84%E4%BB%B6/10%20%E9%A2%84%E5%BA%94%E5%8A%9B%E6%B7%B7%E5%87%9D%E5%9C%9F%E7%BB%93%E6%9E%84%E6%9E%84%E4%BB%B6.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 预应力混凝土结构构件
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11%20%E6%B7%B7%E5%87%9D%E5%9C%9F%E7%BB%93%E6%9E%84%E6%9E%84%E4%BB%B6%E6%8A%97%E9%9C%87%E8%AE%BE%E8%AE%A1/11%20%E6%B7%B7%E5%87%9D%E5%9C%9F%E7%BB%93%E6%9E%84%E6%9E%84%E4%BB%B6%E6%8A%97%E9%9C%87%E8%AE%BE%E8%AE%A1.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11 混凝土结构构件抗震设计
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%99%84%E5%BD%95A%20%E9%92%A2%E7%AD%8B%E7%9A%84%E5%85%AC%E7%A7%B0%E7%9B%B4%E5%BE%84%E3%80%81%E5%85%AC%E7%A7%B0%E6%88%AA%E9%9D%A2%E9%9D%A2%E7%A7%AF%E5%8F%8A%E7%90%86%E8%AE%BA%E9%87%8D%E9%87%8F/%E9%99%84%E5%BD%95A%20%E9%92%A2%E7%AD%8B%E7%9A%84%E5%85%AC%E7%A7%B0%E7%9B%B4%E5%BE%84%E3%80%81%E5%85%AC%E7%A7%B0%E6%88%AA%E9%9D%A2%E9%9D%A2%E7%A7%AF%E5%8F%8A%E7%90%86%E8%AE%BA%E9%87%8D%E9%87%8F.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附录A 钢筋的公称直径、公称截面面积及理论重量
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%99%84%E5%BD%95B%20%E8%BF%91%E4%BC%BC%E8%AE%A1%E7%AE%97%E5%81%8F%E5%8E%8B%E6%9E%84%E4%BB%B6%E4%BE%A7%E7%A7%BB%E4%BA%8C%E9%98%B6%E6%95%88%E5%BA%94%E7%9A%84%E5%A2%9E%E5%A4%A7%E7%B3%BB%E6%95%B0%E6%B3%95/%E9%99%84%E5%BD%95B%20%E8%BF%91%E4%BC%BC%E8%AE%A1%E7%AE%97%E5%81%8F%E5%8E%8B%E6%9E%84%E4%BB%B6%E4%BE%A7%E7%A7%BB%E4%BA%8C%E9%98%B6%E6%95%88%E5%BA%94%E7%9A%84%E5%A2%9E%E5%A4%A7%E7%B3%BB%E6%95%B0%E6%B3%95.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附录B 近似计算偏压构件侧移二阶效应的增大系数法
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%99%84%E5%BD%95C%20%E9%92%A2%E7%AD%8B%E3%80%81%E6%B7%B7%E5%87%9D%E5%9C%9F%E6%9C%AC%E6%9E%84%E5%85%B3%E7%B3%BB%E4%B8%8E%E6%B7%B7%E5%87%9D%E5%9C%9F%E5%A4%9A%E8%BD%B4%E5%BC%BA%E5%BA%A6%E5%87%86%E5%88%99/%E9%99%84%E5%BD%95C%20%E9%92%A2%E7%AD%8B%E3%80%81%E6%B7%B7%E5%87%9D%E5%9C%9F%E6%9C%AC%E6%9E%84%E5%85%B3%E7%B3%BB%E4%B8%8E%E6%B7%B7%E5%87%9D%E5%9C%9F%E5%A4%9A%E8%BD%B4%E5%BC%BA%E5%BA%A6%E5%87%86%E5%88%99.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附录 C 钢筋、混凝土本构关系与混凝土多轴强度准则
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%99%84%E5%BD%95D%20%E7%B4%A0%E6%B7%B7%E5%87%9D%E5%9C%9F%E7%BB%93%E6%9E%84%E6%9E%84%E4%BB%B6%E8%AE%BE%E8%AE%A1/%E9%99%84%E5%BD%95D%20%E7%B4%A0%E6%B7%B7%E5%87%9D%E5%9C%9F%E7%BB%93%E6%9E%84%E6%9E%84%E4%BB%B6%E8%AE%BE%E8%AE%A1.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附录D 素混凝土结构构件设计
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%99%84%E5%BD%95E%20%E4%BB%BB%E6%84%8F%E6%88%AA%E9%9D%A2%E3%80%81%E5%9C%86%E5%BD%A2%E5%8F%8A%E7%8E%AF%E5%BD%A2%E6%9E%84%E4%BB%B6%E6%AD%A3%E6%88%AA%E9%9D%A2%E6%89%BF%E8%BD%BD%E5%8A%9B%E8%AE%A1%E7%AE%97/%E9%99%84%E5%BD%95E%20%E4%BB%BB%E6%84%8F%E6%88%AA%E9%9D%A2%E3%80%81%E5%9C%86%E5%BD%A2%E5%8F%8A%E7%8E%AF%E5%BD%A2%E6%9E%84%E4%BB%B6%E6%AD%A3%E6%88%AA%E9%9D%A2%E6%89%BF%E8%BD%BD%E5%8A%9B%E8%AE%A1%E7%AE%97.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附录E 任意截面、圆形及环形构件正截面承载力计算
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%99%84%E5%BD%95F%20%E6%9D%BF%E6%9F%B1%E8%8A%82%E7%82%B9%E8%AE%A1%E7%AE%97%E7%94%A8%E7%AD%89%E6%95%88%E9%9B%86%E4%B8%AD%E5%8F%8D%E5%8A%9B%E8%AE%BE%E8%AE%A1%E5%80%BC/%E9%99%84%E5%BD%95F%20%E6%9D%BF%E6%9F%B1%E8%8A%82%E7%82%B9%E8%AE%A1%E7%AE%97%E7%94%A8%E7%AD%89%E6%95%88%E9%9B%86%E4%B8%AD%E5%8F%8D%E5%8A%9B%E8%AE%BE%E8%AE%A1%E5%80%BC.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附录 F 板柱节点计算用等效集中反力设计值
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%99%84%E5%BD%95G%20%E6%B7%B1%E5%8F%97%E5%BC%AF%E6%9E%84%E4%BB%B6/%E9%99%84%E5%BD%95G%20%E6%B7%B1%E5%8F%97%E5%BC%AF%E6%9E%84%E4%BB%B6.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附录G 深受弯构件
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%99%84%E5%BD%95H%20%E6%97%A0%E6%94%AF%E6%92%91%E5%8F%A0%E5%90%88%E6%A2%81%E6%9D%BF/%E9%99%84%E5%BD%95H%20%E6%97%A0%E6%94%AF%E6%92%91%E5%8F%A0%E5%90%88%E6%A2%81%E6%9D%BF.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附录H 无支撑叠合梁板
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%99%84%E5%BD%95J%20%E5%90%8E%E5%BC%A0%E6%9B%B2%E7%BA%BF%E9%A2%84%E5%BA%94%E5%8A%9B%E7%AD%8B%E7%94%B1%E9%94%9A%E5%85%B7%E5%8F%98%E5%BD%A2%E5%92%8C%E9%A2%84%E5%BA%94%E5%8A%9B%E7%AD%8B%E5%86%85%E7%BC%A9%E5%BC%95%E8%B5%B7%E7%9A%84%E9%A2%84%E5%BA%94%E5%8A%9B%E6%8D%9F%E5%A4%B1/%E9%99%84%E5%BD%95J%20%E5%90%8E%E5%BC%A0%E6%9B%B2%E7%BA%BF%E9%A2%84%E5%BA%94%E5%8A%9B%E7%AD%8B%E7%94%B1%E9%94%9A%E5%85%B7%E5%8F%98%E5%BD%A2%E5%92%8C%E9%A2%84%E5%BA%94%E5%8A%9B%E7%AD%8B%E5%86%85%E7%BC%A9%E5%BC%95%E8%B5%B7%E7%9A%84%E9%A2%84%E5%BA%94%E5%8A%9B%E6%8D%9F%E5%A4%B1.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附录 J 后张曲线预应力筋由锚具变形和预应力筋内缩引起的预应力损失
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%99%84%E5%BD%95K%20%E4%B8%8E%E6%97%B6%E9%97%B4%E7%9B%B8%E5%85%B3%E7%9A%84%E9%A2%84%E5%BA%94%E5%8A%9B%E6%8D%9F%E5%A4%B1/%E9%99%84%E5%BD%95K%20%E4%B8%8E%E6%97%B6%E9%97%B4%E7%9B%B8%E5%85%B3%E7%9A%84%E9%A2%84%E5%BA%94%E5%8A%9B%E6%8D%9F%E5%A4%B1.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附录K 与时间相关的预应力损失
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%9C%AC%E8%A7%84%E8%8C%83%E7%94%A8%E8%AF%8D%E8%AF%B4%E6%98%8E/%E6%9C%AC%E8%A7%84%E8%8C%83%E7%94%A8%E8%AF%8D%E8%AF%B4%E6%98%8E.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    本规范用词说明
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%BC%95%E7%94%A8%E6%A0%87%E5%87%86%E5%90%8D%E5%BD%95/%E5%BC%95%E7%94%A8%E6%A0%87%E5%87%86%E5%90%8D%E5%BD%95.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    引用标准名录
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%9D%A1%E6%96%87%E8%AF%B4%E6%98%8E/%E6%9D%A1%E6%96%87%E8%AF%B4%E6%98%8E.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    条文说明
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sec-5.1.1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1.1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sec-5.1.2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1.2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sec-5.1.3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1.3
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sec-5.1.4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1.4
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sec-5.1.5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1.5
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sec-5.1.6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1.6
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sec-5.2.1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2.1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sec-5.2.2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2.2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sec-5.2.3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2.3
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sec-5.2.4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2.4
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sec-5.2.5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2.5
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sec-5.3.1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3.1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sec-5.3.2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3.2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sec-5.3.3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3.3
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sec-5.3.4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3.4
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sec-5.3.5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3.5
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sec-5.4.1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4.1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sec-5.4.2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4.2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sec-5.4.3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4.3
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sec-5.4.4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4.4
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sec-5.5.1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5.1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sec-5.5.2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5.2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sec-5.5.3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5.3
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sec-5.6.1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.6.1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sec-5.6.2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.6.2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sec-5.6.3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.6.3
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sec-5.7.1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.7.1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sec-5.7.2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.7.2
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+  <h1>5 结构分析</h1>
+
+<p>5 结构分析</p>
+<p>5.1 基本原则</p>
+<h4 id="sec-5.1.1">5.1.1<a class="headerlink" href="#sec-5.1.1" title="Permanent link">&para;</a></h4>
+<p>混凝土结构应进行整体作用效应分析，必要时尚应对结构中受力状况特殊部位进行更详细的分析。</p>
+<h4 id="sec-5.1.2">5.1.2<a class="headerlink" href="#sec-5.1.2" title="Permanent link">&para;</a></h4>
+<p>当结构在施工和使用期的不同阶段有多种受力状况时，应分别进行结构分析，并确定其最不利的作用组合。</p>
+<p>结构可能遭遇火灾、飓风、爆炸、撞击等偶然作用时，尚应按国家现行有关标准的要求进行相应的结构分析。</p>
+<h4 id="sec-5.1.3">5.1.3<a class="headerlink" href="#sec-5.1.3" title="Permanent link">&para;</a></h4>
+<p>结构分析的模型应符合下列要求：</p>
+<p>1 结构分析采用的计算简图、几何尺寸、计算参数、边界条件、结构材料性能指标以及构造措施等应符合实际工作状况；</p>
+<p>2 结构上可能的作用及其组合、初始应力和变形状况等，应符合结构的实际状况；</p>
+<p>3 结构分析中所采用的各种近似假定和简化，应有理论、试验依据或经工程实践验证；计算结果的精度应符合工程设计的要求。</p>
+<h4 id="sec-5.1.4">5.1.4<a class="headerlink" href="#sec-5.1.4" title="Permanent link">&para;</a></h4>
+<p>结构分析应符合下列要求：</p>
+<p>1 满足力学平衡条件；</p>
+<p>2 在不同程度上符合变形协调条件，包括节点和边界的约束条件；</p>
+<p>3 采用合理的材料本构关系或构件单元的受力-变形关系。</p>
+<h4 id="sec-5.1.5">5.1.5<a class="headerlink" href="#sec-5.1.5" title="Permanent link">&para;</a></h4>
+<p>结构分析时，应根据结构类型、材料性能和受力特点等选择下列分析方法：</p>
+<p>1 弹性分析方法；</p>
+<p>2 塑性内力重分布分析方法；</p>
+<p>3 弹塑性分析方法；</p>
+<p>4 塑性极限分析方法；</p>
+<p>5 试验分析方法。</p>
+<h4 id="sec-5.1.6">5.1.6<a class="headerlink" href="#sec-5.1.6" title="Permanent link">&para;</a></h4>
+<p>结构分析所采用的计算软件应经考核和验证，其技术条件应符合本规范和国家现行有关标准的要求。</p>
+<p>应对分析结果进行判断和校核，在确认其合理、有效后方可应用于工程设计。</p>
+<p>5.2 分析模型</p>
+<h4 id="sec-5.2.1">5.2.1<a class="headerlink" href="#sec-5.2.1" title="Permanent link">&para;</a></h4>
+<p>混凝土结构宜按空间体系进行结构整体分析，并宜考虑结构单元的弯曲、轴向、剪切和扭转等变形对结构内力的影响。</p>
+<p>当进行简化分析时，应符合下列规定：</p>
+<p>1 体形规则的空间结构，可沿柱列或墙轴线分解为不同方向的平面结构分别进行分析，但应考虑平面结构的空间协同工作；</p>
+<p>2 构件的轴向、剪切和扭转变形对结构内力分析影响不大时，可不予考虑。</p>
+<h4 id="sec-5.2.2">5.2.2<a class="headerlink" href="#sec-5.2.2" title="Permanent link">&para;</a></h4>
+<p>混凝土结构的计算简图宜按下列方法确定：</p>
+<p>1 梁、柱、杆等一维构件的轴线宜取为截面几何中心的连线，墙、板等二维构件的中轴面宜取为截面中心线组成的平面或曲面；</p>
+<p>2 现浇结构和装配整体式结构的梁柱节点、柱与基础连接处等可作为刚接；非整体浇筑的次梁两端及板跨两端可近似作为铰接；</p>
+<p>3 梁、柱等杆件的计算跨度或计算高度可按其两端支承长度的中心距或净距确定，并应根据支承节点的连接刚度或支承反力的位置加以修正；</p>
+<p>4 梁、柱等杆件间连接部分的刚度远大于杆件中间截面的刚度时，在计算模型中可作为刚域处理。</p>
+<h4 id="sec-5.2.3">5.2.3<a class="headerlink" href="#sec-5.2.3" title="Permanent link">&para;</a></h4>
+<p>进行结构整体分析时，对于现浇结构或装配整体式结构，可假定楼盖在其自身平面内为无限刚性。当楼盖开有较大洞口或</p>
+<p>其局部会产生明显的平面内变形时，在结构分析中应考虑其影响。</p>
+<h4 id="sec-5.2.4">5.2.4<a class="headerlink" href="#sec-5.2.4" title="Permanent link">&para;</a></h4>
+<p>对现浇楼盖和装配整体式楼盖，宜考虑楼板作为翼缘对梁刚度和承载力的影响。梁受压区有效翼缘计算宽度 $ b_{f}^{\prime} $ 可按表5.2.4所列情况中的最小值取用；也可采用梁刚度增大系数法近似考虑，刚度增大系数应根据梁有效翼缘尺寸与梁截面尺寸的相对比例确定。</p>
+<div style="text-align: center;">表 5.2.4 受弯构件受压区有效翼缘计算宽度  $ b_{f}^{\prime} $ </div>
+
+<table border=1 style='margin: auto; width: max-content;'><tr><td rowspan="2" colspan="3">情 况</td><td colspan="2">T形、I形截面</td><td style='text-align: center;'>倒L形截面</td></tr><tr><td style='text-align: center;'>肋形梁(板)</td><td style='text-align: center;'>独立梁</td><td style='text-align: center;'>肋形梁(板)</td></tr><tr><td style='text-align: center;'>1</td><td colspan="2">按计算跨度 $ l_0 $ 考虑</td><td style='text-align: center;'>$ l_0/3 $</td><td style='text-align: center;'>$ l_0/3 $</td><td style='text-align: center;'>$ l_0/6 $</td></tr><tr><td style='text-align: center;'>2</td><td colspan="2">按梁(肋)净距 $ s_n $ 考虑</td><td style='text-align: center;'>$ b+s_n $</td><td style='text-align: center;'>—</td><td style='text-align: center;'>$ b+s_n/2 $</td></tr><tr><td rowspan="3">3</td><td rowspan="3">按翼缘高度 $ h_f&#x27; $ 考虑</td><td style='text-align: center;'>$ h_f&#x27;/h_0 \geq 0.1 $</td><td style='text-align: center;'>—</td><td style='text-align: center;'>$ b+12h_f&#x27; $</td><td style='text-align: center;'>—</td></tr><tr><td style='text-align: center;'>$ 0.1 &gt; h_f&#x27;/h_0 \geq 0.05 $</td><td style='text-align: center;'>$ b+12h_f&#x27; $</td><td style='text-align: center;'>$ b+6h_f&#x27; $</td><td style='text-align: center;'>$ b+5h_f&#x27; $</td></tr><tr><td style='text-align: center;'>$ h_f&#x27;/h_0 &lt; 0.05 $</td><td style='text-align: center;'>$ b+12h_f&#x27; $</td><td style='text-align: center;'>b</td><td style='text-align: center;'>$ b+5h_f&#x27; $</td></tr></table>
+
+<p>注：1 表中 b 为梁的腹板厚度；</p>
+<p>2 肋形梁在梁跨内设有间距小于纵肋间距的横肋时，可不考虑表中情况 3 的规定；</p>
+<p>3 加腋的 T 形、I 形和倒 L 形截面，当受压区加腋的高度  $ h_{h} $  不小于  $ h_{f}^{\prime} $  且加腋的长度  $ b_{h} $  不大于  $ 3h_{h} $  时，其翼缘计算宽度可按表中情况 3 的规定分别增加  $ 2b_{h} $  （T 形、I 形截面）和  $ b_{h} $  （倒 L 形截面）；</p>
+<p>4 独立梁受压区的翼缘板在荷载作用下经验算沿纵肋方向可能产生裂缝时，其计算宽度应取腹板宽度 b。</p>
+<h4 id="sec-5.2.5">5.2.5<a class="headerlink" href="#sec-5.2.5" title="Permanent link">&para;</a></h4>
+<p>当地基与结构的相互作用对结构的内力和变形有显著影响时，结构分析中宜考虑地基与结构相互作用的影响。</p>
+<p>5.3 弹性分析</p>
+<h4 id="sec-5.3.1">5.3.1<a class="headerlink" href="#sec-5.3.1" title="Permanent link">&para;</a></h4>
+<p>结构的弹性分析方法可用于正常使用极限状态和承载能力极限状态作用效应的分析。</p>
+<h4 id="sec-5.3.2">5.3.2<a class="headerlink" href="#sec-5.3.2" title="Permanent link">&para;</a></h4>
+<p>结构构件的刚度可按下列原则确定：</p>
+<p>1 混凝土的弹性模量可按本规范表 4.1.5 采用；</p>
+<p>2 截面惯性矩可按匀质的混凝土全截面计算；</p>
+<p>3 端部加腋的杆件，应考虑其截面变化对结构分析的影响；</p>
+<p>4 不同受力状态下构件的截面刚度，宜考虑混凝土开裂、徐变等因素的影响予以折减。</p>
+<h4 id="sec-5.3.3">5.3.3<a class="headerlink" href="#sec-5.3.3" title="Permanent link">&para;</a></h4>
+<p>混凝土结构弹性分析宜采用结构力学或弹性力学等分析方法。体形规则的结构，可根据作用的种类和特性，采用适当的简化分析方法。</p>
+<h4 id="sec-5.3.4">5.3.4<a class="headerlink" href="#sec-5.3.4" title="Permanent link">&para;</a></h4>
+<p>当结构的二阶效应可能使作用效应显著增大时，在结构分析中应考虑二阶效应的不利影响。</p>
+<p>混凝土结构的重力二阶效应可采用有限元分析方法计算，也可采用本规范附录 B 的简化方法。当采用有限元分析方法时，宜考虑混凝土构件开裂对构件刚度的影响。</p>
+<h4 id="sec-5.3.5">5.3.5<a class="headerlink" href="#sec-5.3.5" title="Permanent link">&para;</a></h4>
+<p>当边界支承位移对双向板的内力及变形有较大影响时，在分析中宜考虑边界支承竖向变形及扭转等的影响。</p>
+<p>5.4 塑性内力重分布分析</p>
+<h4 id="sec-5.4.1">5.4.1<a class="headerlink" href="#sec-5.4.1" title="Permanent link">&para;</a></h4>
+<p>混凝土连续梁和连续单向板，可采用塑性内力重分布方法进行分析。</p>
+<p>重力荷载作用下的框架、框架-剪力墙结构中的现浇梁以及双向板等，经弹性分析求得内力后，可对支座或节点弯矩进行适度调幅，并确定相应的跨中弯矩。</p>
+<h4 id="sec-5.4.2">5.4.2<a class="headerlink" href="#sec-5.4.2" title="Permanent link">&para;</a></h4>
+<p>按考虑塑性内力重分布分析方法设计的结构和构件，应选用符合本规范第4.2.4条规定的钢筋，并应满足正常使用极限状态要求且采取有效的构造措施。</p>
+<p>对于直接承受动力荷载的构件，以及要求不出现裂缝或处于三a、三b类环境情况下的结构，不应采用考虑塑性内力重分布的分析方法。</p>
+<h4 id="sec-5.4.3">5.4.3<a class="headerlink" href="#sec-5.4.3" title="Permanent link">&para;</a></h4>
+<p>钢筋混凝土梁支座或节点边缘截面的负弯矩调幅幅度不宜大于25%；弯矩调整后的梁端截面相对受压区高度不应超过0.35，且不宜小于0.10。</p>
+<p>钢筋混凝土板的负弯矩调幅幅度不宜大于20%。</p>
+<p>预应力混凝土梁的弯矩调幅幅度应符合本规范第 10.1.8 条的规定。</p>
+<h4 id="sec-5.4.4">5.4.4<a class="headerlink" href="#sec-5.4.4" title="Permanent link">&para;</a></h4>
+<p>对属于协调扭转的混凝土结构构件，受相邻构件约束的支承梁的扭矩宜考虑内力重分布的影响。</p>
+<p>考虑内力重分布后的支承梁，应按弯剪扭构件进行承载力计算。</p>
+<p>注：当有充分依据时，也可采用其他设计方法。</p>
+<p>5.5 弹塑性分析</p>
+<h4 id="sec-5.5.1">5.5.1<a class="headerlink" href="#sec-5.5.1" title="Permanent link">&para;</a></h4>
+<p>重要或受力复杂的结构，宜采用弹塑性分析方法对结构整体或局部进行验算。结构的弹塑性分析宜遵循下列原则：</p>
+<p>1 应预先设定结构的形状、尺寸、边界条件、材料性能和配筋等；</p>
+<p>2 材料的性能指标宜取平均值，并宜通过试验分析确定，也可按本规范附录 C 的规定确定；</p>
+<p>3 宜考虑结构几何非线性的不利影响；</p>
+<p>4 分析结果用于承载力设计时，宜考虑抗力模型不定性系数对结构的抗力进行适当调整。</p>
+<h4 id="sec-5.5.2">5.5.2<a class="headerlink" href="#sec-5.5.2" title="Permanent link">&para;</a></h4>
+<p>混凝土结构的弹塑性分析，可根据实际情况采用静力或动力分析方法。结构的基本构件计算模型宜按下列原则确定：</p>
+<p>1 梁、柱、杆等杆系构件可简化为一维单元，宜采用纤维束模型或塑性铰模型；</p>
+<p>2 墙、板等构件可简化为二维单元，宜采用膜单元、板单元或壳单元；</p>
+<p>3 复杂的混凝土结构、大体积混凝土结构、结构的节点或局部区域需作精细分析时，宜采用三维块体单元。</p>
+<h4 id="sec-5.5.3">5.5.3<a class="headerlink" href="#sec-5.5.3" title="Permanent link">&para;</a></h4>
+<p>构件、截面或各种计算单元的受力-变形本构关系宜符合实际受力情况。某些变形较大的构件或节点进行局部精细分析时，宜考虑钢筋与混凝土间的粘结-滑移本构关系。</p>
+<p>钢筋、混凝土材料的本构关系宜通过试验分析确定，也可按</p>
+<p>本规范附录 C 采用。</p>
+<p>5.6 塑性极限分析</p>
+<h4 id="sec-5.6.1">5.6.1<a class="headerlink" href="#sec-5.6.1" title="Permanent link">&para;</a></h4>
+<p>对不承受多次重复荷载作用的混凝土结构，当有足够的塑性变形能力时，可采用塑性极限理论的分析方法进行结构的承载力计算，同时应满足正常使用的要求。</p>
+<h4 id="sec-5.6.2">5.6.2<a class="headerlink" href="#sec-5.6.2" title="Permanent link">&para;</a></h4>
+<p>整体结构的塑性极限分析计算应符合下列规定：</p>
+<p>1 对可预测结构破坏机制的情况，结构的极限承载力可根据设定的结构塑性屈服机制，采用塑性极限理论进行分析；</p>
+<p>2 对难于预测结构破坏机制的情况，结构的极限承载力可采用静力或动力弹塑性分析方法确定；</p>
+<p>3 对直接承受偶然作用的结构构件或部位，应根据偶然作用的动力特征考虑其动力效应的影响。</p>
+<h4 id="sec-5.6.3">5.6.3<a class="headerlink" href="#sec-5.6.3" title="Permanent link">&para;</a></h4>
+<p>承受均布荷载的周边支承的双向矩形板，可采用塑性铰线法或条带法等塑性极限分析方法进行承载能力极限状态的分析与设计。</p>
+<p>5.7 间接作用分析</p>
+<h4 id="sec-5.7.1">5.7.1<a class="headerlink" href="#sec-5.7.1" title="Permanent link">&para;</a></h4>
+<p>当混凝土的收缩、徐变以及温度变化等间接作用在结构中产生的作用效应可能危及结构的安全或正常使用时，宜进行间接作用效应的分析，并应采取相应的构造措施和施工措施。</p>
+<h4 id="sec-5.7.2">5.7.2<a class="headerlink" href="#sec-5.7.2" title="Permanent link">&para;</a></h4>
+<p>混凝土结构进行间接作用效应的分析，可采用本规范第5.5节的弹塑性分析方法；也可考虑裂缝和徐变对构件刚度的影响，按弹性方法进行近似分析。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs"], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="../../javascripts/config.js"></script>
+      
+        <script src="../../javascripts/formatting.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
